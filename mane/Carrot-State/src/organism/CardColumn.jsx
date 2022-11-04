@@ -5,6 +5,7 @@ function CardColumn(){
         <>
             <div className="col-10">
             <ItemCard />
+            <ItemCard />
             </div>
         </>
     )
