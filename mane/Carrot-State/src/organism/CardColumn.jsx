@@ -3,7 +3,8 @@ import ItemCard from "./ItemCard"
 function CardColumn(){
     return(
         <>
-            <div className="col-10">
+            <div className="col-11 boxc">
+            <ItemCard />
             <ItemCard />
             <ItemCard />
             </div>

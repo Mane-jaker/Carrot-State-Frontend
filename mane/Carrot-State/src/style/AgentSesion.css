@@ -13,7 +13,11 @@
 }
 
 .img-porfile{
-    height: 20vh;
+    height: 30vh;
+    overflow: hidden;
+    clip-path: circle(45% at 50% 50%);
+    width: 70%;
+    margin-left: 10%;
 }
 
 .space{
@@ -50,13 +54,33 @@
     color: aliceblue;
 }
 
-.bt{
-    border-top: solid 2px black;
-}
+
 
 .fillcard{
     background-color: #D9D9D9;
     border-radius: 15px;
+}
+
+.boxc{
+    height: 65vh;
+    overflow-y: scroll;
+    background-color: #42608e;
+    border-radius: 10px;
+}
+
+.boxc::-webkit-scrollbar {
+    width: 12px;  
+    border-radius: 20px;        /* width of the entire scrollbar */
+}
+  
+.boxc::-webkit-scrollbar-track {
+    background: #42608e;        /* color of the tracking area */
+}
+  
+.boxc::-webkit-scrollbar-thumb {
+    background-color: #DCE0E6;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid #42608e;
 }
 
 .texti{
