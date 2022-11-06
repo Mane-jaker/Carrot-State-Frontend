@@ -1,7 +1,7 @@
-function ButtonAtom({clas,text,type}){
+function ButtonAtom({clas,text,type,Click}){
     return(
         <>
-            <a className={clas} type={type}>{text}</a>
+            <a className={clas} type={type} onClick={Click}>{text}</a>
         </>
     )
 }
