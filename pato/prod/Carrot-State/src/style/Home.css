@@ -1,0 +1,86 @@
+.StartRow{
+    display: flex;
+    background-color: rgba(220, 224, 230, 1);
+    
+}
+
+.ColStart{
+    display: flex;
+    flex-direction: row;
+    color: black;
+    justify-content: center;
+    align-items: center;
+}
+
+.ColInfo{
+    height: 705px;
+    background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)),
+	url();
+}
+
+.tamaño{
+    width: 180px;
+    border-radius: 15px;
+}
+
+.Button{
+    width: 100%;
+    display: flex;
+    padding: 10px;
+}
+
+.Content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Title{
+    padding-top:10px;
+    display: flex;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.Buttons{
+    display: flex;
+    flex-direction: row;
+}
+
+.ButtonIngresar{
+    padding: 10px;
+}
+
+.ButtonRegistrarse{
+    padding: 10px;
+}
+
+.PublicityContent {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    color: rgba(224, 224, 182, 1);
+    font-size: 30px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.Sub1{
+    font-weight: 100;
+}
+
+.Sub2{
+    font-weight: 100;
+}
+
+.Sub3{
+    font-weight: 100;
+}
+
+.infoButton{
+    display: flex;
+    flex-direction: column;
+    height: 40px;
+    width: 250px;
+    border-radius: 15px;
+}
