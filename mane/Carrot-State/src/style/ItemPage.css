@@ -3,49 +3,34 @@
 }
 
 .BackPage{
-    height: 12vh;
-}
-
-.BackMolecule{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    padding: 10px;
+    height: 10vh;
 }
 
 .TextCenter{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background-color: rgba(96, 109, 128, 1);
-    width: 95%;
-    height: 70px;
     border-radius: 15px;
+    height: 9vh;
+}
+
+.mt4{
+    margin-top: 0.5%;
 }
 
 .TitleBack{
     font-size: 20px;
     font-weight: bold;
-    padding-top: 13px;
-    padding-right: 76px;
-}
-
-.ButtonBack{
     display: flex;
+    align-items:flex-end stretch;
     justify-content: center;
-    align-items: center;
 }
 
 .BtnBack{
     font-weight: bold;
     font-size: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background-color: rgba(135, 176, 145, 1);
     border-radius: 15px;
-    width: 70px;
-    height: 70px;
+    width: 100%;
+    height: 100%;
 }
 
 
@@ -81,25 +66,19 @@
 }
 
 .Inputs1{
-    display: flex;
     justify-content: center;
-    flex-direction: column;
-    padding: 50px;
+   
 }
 
 .Inputs2{
-    display: flex;
+
     justify-content: center;
-    flex-direction: column;
-    padding: 50px;
 }
 
 .Intp1{
     background-color: rgba(43, 76, 126, 1);
     border-radius: 15px;
-    padding: 6px;
     padding-left: 28px;
-    width: 400px;
 }
 
 .Intp1::placeholder{
@@ -162,7 +141,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 
 .addimg{

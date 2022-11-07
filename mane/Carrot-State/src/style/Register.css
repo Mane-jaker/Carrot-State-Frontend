@@ -9,7 +9,7 @@
 .CardRegister{
     display: flex;
     border-radius: 15px;
-    height: 75%;
+    height: 80%;
     width: 52vh;
     align-items: flex-start;
     justify-content: center;
@@ -19,7 +19,6 @@
 .RegisterTitle{
     display: flex;
     justify-content: center;
-    padding: 30px;
     font-size: 40px;
 }
 
@@ -105,7 +104,7 @@
 .ButtonAtomRegister{
     display: flex;
     justify-content: center;
-    padding: 40px;
+    padding-top: 2%;
 }
 
 .Tamaño{

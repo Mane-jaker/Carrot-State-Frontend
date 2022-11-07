@@ -37,8 +37,8 @@ function FormularioRh (){
                 <div className="SelecRH">
                     <SeleccionRH/>
                 </div>
-                    <div className="row Inputs">
-                        <div className="col-6 Inputs1">
+                    <div className="row Inputs mt3">
+                        <div className="col-4 offset-2 Inputs1">
                             <div className="InputRH1">
                                 <TextAtom clas={classText} text={txt1}/>
                                 <InputAtom clas={clase1} type={type1} place={place1}/>
@@ -56,7 +56,7 @@ function FormularioRh (){
                                 <InputAtom clas={clase1} type={type1} place={place4}/>
                             </div>
                         </div>
-                        <div className="col-6 Inputs2">
+                        <div className="col-4 offset-2 Inputs2">
                             <div className="InputRH5">
                                 <TextAtom clas={classText} text={txt5}/>
                                 <InputAtom clas={clase1} type={type1} place={place5}/>
@@ -77,7 +77,7 @@ function FormularioRh (){
                             </div>
                         </div>      
                     </div>
-                <div className="mt1 ButtSend">
+                <div className="mt3 ButtSend">
                     <ButtonAtom clas={claseBut} text={textoBut} type={typeBut} Click={cli}/>
                 </div>
             </div>
