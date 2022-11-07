@@ -1,5 +1,6 @@
 import TextAtom from "../atoms/TextAtom"
 import ButtonAtom from "../atoms/ButtonAtom"
+import {NavLink} from "react-router-dom"
 
 function PublicityBlock(){
     const clasSub1= "Sub1"
@@ -18,7 +19,8 @@ function PublicityBlock(){
                 <TextAtom clas={clasSub1} text={txt1} />
                 <TextAtom clas={clasSub2} text={txt2} />
                 <TextAtom clas={clasSub3} text={txt3} />
-                <ButtonAtom clas={classBut} text={txt4} type={type} />
+                <NavLink to="/login"><ButtonAtom clas={classBut} text={txt4} type={type} /></NavLink>
+                
             </div>
         </>
     )

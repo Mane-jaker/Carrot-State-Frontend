@@ -1,5 +1,6 @@
 import ButtonAtom from "../atoms/ButtonAtom"
 import TextAtom from "../atoms/TextAtom"
+import {NavLink} from "react-router-dom"
 
     const clas = "btn btn-primary tamaño"
     const type = "button"
@@ -20,10 +21,10 @@ function StartRow(){
                     </div>
                     <div className="Buttons">
                         <div className="ButtonIngresar">
-                            <ButtonAtom clas={clas} text={txt0} type={type} />
+                           <NavLink to="/login"><ButtonAtom clas={clas} text={txt0} type={type} /></NavLink> 
                         </div>
                         <div className="ButtonRegistrarse">
-                            <ButtonAtom clas={clas1} text={txt1} type={type1} />
+                            <NavLink to="/register"><ButtonAtom clas={clas1} text={txt1} type={type1} /></NavLink>
                         </div>
                     </div>   
                 </div>

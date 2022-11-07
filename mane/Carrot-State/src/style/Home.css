@@ -1,10 +1,13 @@
-.StartRow{
-    display: flex;
-    background-color: rgba(220, 224, 230, 1);
-    
+.Fondito{
+    background-image: url(../assets/imgporfile/casa.jpg);
+    background-repeat: no-repeat;
 }
 
-.ColStart{
+.StartRow{
+    display: flex; 
+    border: 1px solid black;
+    background-color: rgba(220, 224, 230, 1);
+    height: 12vh;
     display: flex;
     flex-direction: row;
     color: black;
@@ -12,8 +15,12 @@
     align-items: center;
 }
 
+
+
+
 .ColInfo{
-    height: 705px;
+    height: 88vh;
+    padding: 60px;
     background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)),
 	url();
 }
@@ -78,8 +85,6 @@
 }
 
 .infoButton{
-    display: flex;
-    flex-direction: column;
     height: 40px;
     width: 250px;
     border-radius: 15px;
