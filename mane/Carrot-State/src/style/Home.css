@@ -1,6 +1,13 @@
 .Fondito{
     background-image: url(../assets/imgporfile/casa.jpg);
     background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    justify-content: center;
+}
+
+.Info{
+    padding: 0px;
 }
 
 .StartRow{

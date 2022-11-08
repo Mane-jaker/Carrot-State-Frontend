@@ -2,39 +2,43 @@ import TextAtom from "../atoms/TextAtom"
 import ButtonAtom from "../atoms/ButtonAtom"
 import ItemExtend from "./ItemExtend";
 
-function ItemCard({Text1,Text2}){
+function ItemCard({Iteams}){
     const clas = "texti"
     const clas3 = "btn btn-dark add mbo";
     const textMore = "See More";
     const type= "button"
 
-    const cardp = document.getElementById('pc1')
-    const cardg = document.getElementById('p1')
+    const cardp1 = document.getElementById('pc1')
+    const cardg1 = document.getElementById('p1')
+    const cardp2 = document.getElementById('pc2')
+    const cardg2 = document.getElementById('p2')
+    const cardp3 = document.getElementById('pc3')
+    const cardg3 = document.getElementById('p3')
+
+    const cardp = ["cardp1","cardp2","cardp3"]
+
+    const cardg = ["cardg1","cardg2","cardg3"]
 
     function abrir(){
-        cardp.classList.toggle("dispn")  
-        cardg.classList.toggle("dispn")
+        cardp1.classList.toggle("dispn")  
+        cardg1.classList.toggle("dispn")
+        cardp2.classList.toggle("dispn")  
+        cardg2.classList.toggle("dispn")
+        cardp3.classList.toggle("dispn")  
+        cardg3.classList.toggle("dispn")
     } 
-    /*
-    const houses = document.querySelector('.houses');
-console.log(houses);
-houses.addEventListener ('click', function(){//changes titles, changes add button, not changes content
-    document.getElementById('changeabl').classList.remove('disp');
-    document.getElementById('changeable').classList.add('disp');
-    document.getElementById('changeables').classList.add('disp');
-});
-    */
+
     return(
         <>
         <div className="row justcen mt3">
-            <ItemExtend desc={Text2} name={Text1} clas={clas} cardg ={cardg} cardp ={cardp}/>
-            <div className="col-10 fillcard" id="pc1">
+            <ItemExtend comp={Iteams} clas={clas} cardg={cardg} cardp={cardp}/>
+            <div className="col-10 fillcard" id={"pc" + Iteams.id}>
                 <div className="row mt3">
-                    <TextAtom clas={clas} text={Text1} />
+                    <TextAtom clas={clas} text={Iteams.name} />
                 </div>
                 <div className="row">
                     <div className="col-8">
-                        <TextAtom clas={clas} text={Text2} />
+                        <TextAtom clas={clas} text={Iteams.description} />
                     </div>
                 </div>
                 <div className="row">

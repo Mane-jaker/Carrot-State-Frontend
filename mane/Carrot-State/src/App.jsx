@@ -11,8 +11,15 @@ import Register from './template/Register'
 import ClientsPage from './template/ClientsPage'
 import UploadImg from './template/UploadImg'
 
+
 function App() {
-   
+
+    const agentState = useSelector(state => state.agents)
+    const houseState = useSelector(state => state.items)
+    const plotState = useSelector(state => state.plots)
+    const premiseState = useSelector(state => state.premises) 
+
+    console.log(agentState)
 
  return(
   <>
@@ -22,7 +29,7 @@ function App() {
                <Route path='/login' element={<Login/>}/>
                <Route path='/register' element={<Register/>}/>
                <Route path='/agentSesion' element={<AgentSesion/>}/>
-               <Route path='/iteamPage' element={<ItemPage/>}/>
+               <Route path='/itemPage' element={<ItemPage/>}/>
                <Route path='/manager' element={<ManagerSesion/>}/>
                <Route path='/prospectiveBuyer' element={ProspectiveBuyerPage}/> 
                <Route path='/ClientSesion' element={ClientsPage}/> 

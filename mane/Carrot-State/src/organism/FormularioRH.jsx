@@ -31,58 +31,157 @@ function FormularioRh (){
 
     const cli="activar()"
 
-    return(
-        <div className="row FormRH">
+    const from = useFormik({
+      initialValues: {
+        name: "",
+        description: "",
+        price: null,
+        size:null,
+        location: "",
+        bathRoomNum: null,
+        rooms: null,
+        floors: null,
+      },
+
+      onSubmit: (values) =>{
+            let obj = {
+                name:       values.name,
+                description:values.description,
+                price:      values.price,
+                size:       values.size,
+                location:   values.location,
+                bathRoomNum:values.bathRoomNum,
+                rooms:      values.rooms,
+                floors:     values.floors
+            }
+      }
+    })
+
+    return (
+      <>
+        <form onSobmit={form.handleSubmit}>
+          <div className="row FormRH">
             <div className="col-11 InputForms">
-                <div className="SelecRH">
-                    <SeleccionRH/>
+              <div className="SelecRH">
+                <SeleccionRH />
+              </div>
+              <div className="row Inputs mt3">
+                <div className="col-4 offset-2 Inputs1">
+                  <div className="InputRH1">
+                    <TextAtom clas={classText} text={txt1} />
+                    <InputAtom
+                      clas={clase1}
+                      type={type1}
+                      place={place1}
+                      val={form.values.name}
+                      di={"name"}
+                      mane={"name"}
+                      Change={form.handleChange}
+                    ></InputAtom>
+                  </div>
+                  <div className="InputRH2">
+                    <TextAtom clas={classText} text={txt2} />
+                    <InputAtom
+                      clas={clase1}
+                      type={type1}
+                      place={place2}
+                      val={form.values.description}
+                      di={"description"}
+                      mane={"description"}
+                      Change={form.handleChange}
+                    ></InputAtom>
+                  </div>
+                  <div className="InputRH3">
+                    <TextAtom clas={classText} text={txt3} />
+                    <InputAtom
+                      clas={clase1}
+                      type={type1}
+                      place={place3}
+                      val={form.values.price}
+                      di={"price"}
+                      mane={"price"}
+                      Change={form.handleChange}
+                    ></InputAtom>
+                  </div>
+                  <div className="InputRH4">
+                    <TextAtom clas={classText} text={txt4} />
+                    <InputAtom
+                      clas={clase1}
+                      type={type1}
+                      place={place4}
+                      val={form.values.size}
+                      di={"size"}
+                      mane={"size"}
+                      Change={form.handleChange}
+                    ></InputAtom>
+                  </div>
                 </div>
-                    <div className="row Inputs mt3">
-                        <div className="col-4 offset-2 Inputs1">
-                            <div className="InputRH1">
-                                <TextAtom clas={classText} text={txt1}/>
-                                <InputAtom clas={clase1} type={type1} place={place1}/>
-                            </div>
-                            <div className="InputRH2">
-                                <TextAtom clas={classText} text={txt2}/>
-                                <InputAtom clas={clase1} type={type1} place={place2}/>
-                            </div>
-                            <div className="InputRH3">
-                                <TextAtom clas={classText} text={txt3}/>
-                                <InputAtom clas={clase1} type={type1} place={place3}/>
-                            </div>
-                            <div className="InputRH4">
-                                <TextAtom clas={classText} text={txt4}/>
-                                <InputAtom clas={clase1} type={type1} place={place4}/>
-                            </div>
-                        </div>
-                        <div className="col-4 offset-2 Inputs2">
-                            <div className="InputRH5">
-                                <TextAtom clas={classText} text={txt5}/>
-                                <InputAtom clas={clase1} type={type1} place={place5}/>
-                            </div>
-                            <div id="Desaparese">
-                                 <div className="InputRH6">
-                                    <TextAtom clas={classText} text={txt6}/>
-                                    <InputAtom clas={clase1} type={type1} place={place6}/>
-                                </div>
-                                <div className="InputRH7">
-                                    <TextAtom clas={classText} text={txt7}/>
-                                    <InputAtom clas={clase1} type={type1} place={place7}/>
-                                </div> 
-                                <div className="InputRH8">
-                                    <TextAtom clas={classText} text={txt8}/>
-                                    <InputAtom clas={clase1} type={type1} place={place8}/>
-                                </div> 
-                            </div>
-                        </div>      
+                <div className="col-4 offset-2 Inputs2">
+                  <div className="InputRH5">
+                    <TextAtom clas={classText} text={txt5} />
+                    <InputAtom
+                      clas={clase1}
+                      type={type1}
+                      place={place5}
+                      val={form.values.location}
+                      di={"location"}
+                      mane={"location"}
+                      Change={form.handleChange}
+                    ></InputAtom>
+                  </div>
+                  <div id="Desaparese">
+                    <div className="InputRH6">
+                      <TextAtom clas={classText} text={txt6} />
+                      <InputAtom
+                        clas={clase1}
+                        type={type1}
+                        place={place6}
+                        val={form.values.bathRoomNum}
+                        di={"bathRoomNum"}
+                        mane={"bathRoomNum"}
+                        Change={form.handleChange}
+                      ></InputAtom>
                     </div>
-                <div className="mt3 ButtSend">
-                    <ButtonAtom clas={claseBut} text={textoBut} type={typeBut} Click={cli}/>
+                    <div className="InputRH7">
+                      <TextAtom clas={classText} text={txt7} />
+                      <InputAtom
+                        clas={clase1}
+                        type={type1}
+                        place={place7}
+                        val={form.values.rooms}
+                        di={"rooms"}
+                        mane={"rooms"}
+                        Change={form.handleChange}
+                      ></InputAtom>
+                    </div>
+                    <div className="InputRH8">
+                      <TextAtom clas={classText} text={txt8} />
+                      <InputAtom
+                        clas={clase1}
+                        type={type1}
+                        place={place8}
+                        val={form.values.floors}
+                        di={"floors"}
+                        mane={"floors"}
+                        Change={form.handleChange}
+                      ></InputAtom>
+                    </div>
+                  </div>
                 </div>
+              </div>
+              <div className="mt3 ButtSend">
+                <ButtonAtom
+                  clas={claseBut}
+                  text={textoBut}
+                  type={typeBut}
+                  Click={cli}
+                />
+              </div>
             </div>
-        </div>
-    )
+          </div>
+        </form>
+      </>
+    );
     
     
 
