@@ -1,6 +1,12 @@
+import ButtonAtom from "../atoms/ButtonAtom"
+
 function SalessMolecule(){
+    const clas = "btn btn-dark"
+    const text = "Sales"
     return(
-        <div></div>
+        <>
+            <ButtonAtom clas={clas} text={text} />
+        </>
     )
 }
 

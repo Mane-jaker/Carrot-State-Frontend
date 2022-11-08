@@ -1,8 +1,10 @@
 .Register{
     height: 100vh;
-    width: 100%;
     display: flex;
-    background-color: rgba(96, 109, 128, 1);
+    background-image: url(../assets/imgporfile/loginimg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
     justify-content: center;
     align-items: center;
 }
@@ -10,7 +12,7 @@
 .CardRegister{
     display: flex;
     border-radius: 15px;
-    height: 75%;
+    height: 80%;
     width: 52vh;
     align-items: flex-start;
     justify-content: center;
@@ -20,7 +22,6 @@
 .RegisterTitle{
     display: flex;
     justify-content: center;
-    padding: 30px;
     font-size: 40px;
 }
 
@@ -106,11 +107,17 @@
 .ButtonAtomRegister{
     display: flex;
     justify-content: center;
-    padding: 40px;
+    padding-top: 15%;
 }
 
 .Tamaño{
     background-color: rgba(43, 76, 126, 1);
     border-radius: 15px;
     width: 200px;
+}
+
+.RegisterPie{
+    padding-top: 30%;
+    display: flex;
+    justify-content: center;
 }

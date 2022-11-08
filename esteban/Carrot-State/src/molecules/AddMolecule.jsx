@@ -1,18 +1,17 @@
 import ButtonAtom from "../atoms/ButtonAtom";
+import {NavLink} from "react-router-dom"
 
-function AddMolecule(){
+function AddMolecule({Text1,Text2}){
 
     const clas = "btn textb"
     const clas1 = "btn simbolb"
     const type = "button"
-    const text1 = "Add item"
-    const text2 = "+"
 
     return(
         <>
-            <div class="btn-group add" role="group" aria-label="Basic example">
-                <ButtonAtom clas={clas} text={text1} type={type} />
-                <ButtonAtom clas={clas1} text={text2} type={type} />
+            <div className="btn-group add" role="group" aria-label="Basic example">
+                <ButtonAtom clas={clas} text={Text1} type={type} />
+                <NavLink to="/itemPage"><ButtonAtom clas={clas1} text={Text2} type={type} /></NavLink>
             </div>
         </>
     )

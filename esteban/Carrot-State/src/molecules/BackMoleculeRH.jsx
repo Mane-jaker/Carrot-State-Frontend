@@ -6,17 +6,21 @@ function BackMoleculeRH(){
     const text1 = "<-"
     const type = "button"
     const clase2 = "TitleBack"
-    const text2 = "<Selected Items>"
+    const text2 = "Añadir Propiedad"
 
     return(
-        <div className="BackMolecule">
-            <div className="ButtonBack">
+        <>
+        <div className="col-12">
+            <div className="row mt4">
+            <div className="col-1">
                 <ButtonAtom clas={clase1} text={text1} type={type} />
             </div>
-            <div className="TextCenter">
+            <div className="col-11 TextCenter">
                 <TextAtom clas={clase2} text={text2}/>
             </div>
+            </div>
         </div>
+        </>
     )
 }
 

@@ -1,8 +1,10 @@
 .Login{
     height: 100vh;
-    width: 100%;
     display: flex;
-    background-color: rgba(96, 109, 128, 1);
+    background-image: url(../assets/imgporfile/loginimg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
     justify-content: center;
     align-items: center;
 }
@@ -20,7 +22,7 @@
 .LoginTitle{
     display: flex;
     justify-content: center;
-    padding: 30px;
+    padding: 20px;
     font-size: 40px;
 }
 
@@ -29,9 +31,12 @@
     flex-direction: column;
     justify-content:center;
     width: 100%;
+    height: 60vh;
 }
 
 .Inputs{
+    display: flex;
+    flex-direction: column;
     width: 100%;
 }
 
@@ -40,7 +45,7 @@
     justify-content: center;
     flex-direction: column;
     padding: 6px;
-    padding-left: 28px;
+    padding-left: 8px;
 }
 
 .InputPassword{
@@ -76,7 +81,7 @@
 .ButtonAtom{
     display: flex;
     justify-content: center;
-    padding: 40px;
+    padding: 60px;
 }
 
 .Tamaño{
@@ -88,5 +93,12 @@
 .LoginPie{
     display: flex;
     justify-content: center;
-    padding: 15px;
+}
+
+input{
+    height: 5vh;
+    width: 30vh;
+    border-radius: 15px;
+    background-color: rgba(43, 76, 126, 1);
+    
 }
