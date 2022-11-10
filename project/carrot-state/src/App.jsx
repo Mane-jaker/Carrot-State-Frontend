@@ -1,14 +1,13 @@
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import AgentPage from './pages/AgentPage'
 import AgentSesion from './pages/AgentSesion'
+import ClientsContentPage from './pages/ClientsContentPage'
 import ClientsPage from './pages/ClientsPage'
 import ErrorPage from './pages/ErrorPage'
 import Home from './pages/Home'
 import ItemPage from './pages/ItemPage'
 import Login from './pages/Login'
 import ManagerSesion from './pages/ManagerSesion'
-import ProspectiveBuyerPageContent from './pages/ProspectiveBuyerPageContent'
-import ProspectiveBuyerPage from './pages/ProspectiveBuyersPage'
 import Register from './pages/Register'
 import SalesPage from './pages/SalesPage'
 import UploadImg from './pages/UploadImg'
@@ -31,8 +30,7 @@ function App() {
             <Route path='/agentPage' element={<AgentPage/>}/>
             <Route path='/item' element={<ItemPage/>}/>
             <Route path='/clients' element={<ClientsPage/>}/>
-            <Route path='/prospectiveContent' element={<ProspectiveBuyerPageContent/>}/>
-            <Route path='/prospectiveBuyers' element={<ProspectiveBuyerPage/>}/>
+            <Route path='/clientsContent' element={<ClientsContentPage/>}/>
             <Route path='/sales' element={<SalesPage/>}/>
             <Route path='/uploadImg' element={<UploadImg/>}/>
           </Routes>
