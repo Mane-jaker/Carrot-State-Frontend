@@ -38,16 +38,15 @@ const getPremise = async (id) => {
 
 const getLogin = async (obj) => {
 	console.log(JSON.stringify(obj));
-	fetch("http://localhost:8080/login/agent ", {
+	return fetch("http://localhost:8080/login/agent ", {
 	method: 'POST',
 	headers: {
 		Accept: "application/json",
 		'Content-Type': 'application/json'},
-	body: JSON.stringify(obj)}).then((res => res.json())).then(data =>{
-		return new Promise((resolve,reject) => {
-			const id = (data.data.loged.id).toString
+	body: JSON.stringify(obj),
+	cors: 'no-cors'}).then((res => res.json())).then(data =>{
+			const id = (data.data.loged.id)
 			return id;
-		})
 	});
 }
 

@@ -1,13 +1,15 @@
 import { createSlice } from "@reduxjs/toolkit"
 
-const initialState = []
+const initialState = {
+    id: '5'
+}
 
 export const idAgentSlice = createSlice({
     name: 'idagents',
     initialState,
     reducers: {
         addIdAgent: (state, action) => {
-            state.push(action.payload)        
+            state.id = action.payload       
         }
     }
 })

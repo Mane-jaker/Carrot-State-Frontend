@@ -3,7 +3,7 @@ import InputAtom from "../atoms/InputAtom"
 import ButtonAtom from "../atoms/ButtonAtom"
 import {NavLink} from "react-router-dom"
 import { useFormik } from "formik"
-import { getLogin, getLogin } from "../Funtions/Funciones"
+import { getLogin } from "../Funtions/Funciones"
 import axios from "axios"
 import {useDispatch} from 'react-redux'
 import { addIdAgent } from '../features/agent/idAgentSlice'
@@ -31,17 +31,12 @@ function FormColumn (){
         onSubmit: (values) =>{
 
             let obj = {email:values.email,password:values.password}
-            const getLogin = getLogin(obj).catch(err => console.log("x")).then((data) =>{
-                distpatch(addIdAgent(data));
-                return getLogin;
+            getLogin(obj).catch(err => console.log("x")).then((data) => {
+                distpatch(addIdAgent(data))
             })
 
-
-            if(getLogin != null){
-                
-            }else{
-
-            }
+            	
+            window.location.href = '/agentSesion';
             /*let obj = {email:values.email,password:values.password}
             getLogin(obj).catch(err => console.log(err)).then((data) => {
                 console.log(data)

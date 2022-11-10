@@ -18,8 +18,9 @@ function App() {
     const houseState = useSelector(state => state.items)
     const plotState = useSelector(state => state.plots)
     const premiseState = useSelector(state => state.premises) 
+    const idAgentState = useSelector(state => state.idagents)
 
-    console.log(agentState)
+    console.log(idAgentState)
 
  return(
   <>
