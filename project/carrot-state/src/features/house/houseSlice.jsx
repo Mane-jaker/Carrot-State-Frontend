@@ -1,7 +1,16 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-    
+    id: 0,
+    name: "",
+    location: "",
+    cityState: "",
+    description: "",
+    bathroom: 0,
+    room: 0,
+    floor: 0,
+    size: 0,
+    price: 0
 };
 
 export const houseSlice = createSlice({

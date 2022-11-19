@@ -1,29 +1,20 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-const initialState = [
-    { 
-        id: "1",
-        title: "Task 1",
-        description: "",
-        completed: false
-    },
-    {
-        id: "2",
-        title: "Task 2",
-        description: "",
-        completed: false
-    },
-    {
-        id: "3",
-        title: "Task 3",
-        description: "",
-        completed: false
-    }
-];
+const initialState = { 
+    id: 0,
+    name: "",
+    email: "",
+    password: "",
+    profilePicture: [],
+    numberOfSales: 0,
+    numberOfPropierties: 0,
+    status: false
+};
+
 
 export const agentSlice = createSlice({
     name: 'agents',
-    initialState: [],
+    initialState: {},
     reducers: {
         addAgent: (state, action) => {
             state.push(action.payload)        
