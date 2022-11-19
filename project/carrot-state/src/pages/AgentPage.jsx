@@ -6,29 +6,29 @@ import Card from "../components/Card"
 function AgentPage(){
     return(
         <>
+        
             <div className="row">
-                <div className="col-4">
-                    {/*side */}
-                </div>
-                <div className="col-8">
-                    <div className="row">
-                        <div className="col-8">
-                            {/*tittle */}
-                        </div>
-                    </div>
-                    <div className="row">
-                        <div className="col-8">
-                            {/*search */}
-                        </div>
-                    </div>
+                {/*nav*/}
+            </div>
+            <div className="row">
+                {/*bienvenida */}
+            </div>
+            <div className="row">
+                <div className="container">
+                    {/*text */}
                 </div>
             </div>
-           
             <div className="row">
-                
-                <div className="col-8">
-                    {/*card */}
-                </div>
+               {/*butons */} 
+                <div className="col"></div>
+                <div className="col"></div>
+                <div className="col"></div>
+            </div>
+            <div className="container">
+                {/*pagination*/}
+            </div>
+            <div className="row">
+                {/*footer*/}
             </div>
         </>
     )

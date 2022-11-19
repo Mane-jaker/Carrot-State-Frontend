@@ -1,0 +1,83 @@
+.page{
+    height: 100vh;
+    background-color: #D9D9D9;
+}
+
+.title-b{
+    width: 100%;
+    border-radius: 15px;
+    background-color: #171430;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tittext{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 120%;
+    color: #FFFFFF;
+}
+
+.colum{
+    height: 80vh;
+    overflow-y: scroll;
+    background-color: #567EBB;
+    border-radius: 20px;
+}
+
+.colum::-webkit-scrollbar {
+    width: 12px;  
+    border-radius: 20px;        /* width of the entire scrollbar */
+}
+  
+.colum::-webkit-scrollbar-track {
+    background: #42608e;        /* color of the tracking area */
+}
+  
+.colum::-webkit-scrollbar-thumb {
+    background-color: #DCE0E6;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid #42608e;
+}
+
+.fillcard{
+    background-color: #D9D9D9;
+    border-radius: 15px;
+}
+
+.BtBack{
+    font-weight: bold;
+    font-size: 150%;
+    background-color: rgba(135, 176, 145, 1);
+    border-radius: 15px;
+    width: 100%;
+}
+
+.justcen{
+    justify-content: center; 
+}
+
+.mt{
+    margin-top: 10%;
+}
+
+.mt1{
+    margin-top: 5%;
+}
+
+.mt2{
+    margin-top: 20%;
+}
+
+.mt3{
+    margin-top: 2%;
+}
+
+.mbo{
+    margin-bottom: 5%;
+}
+
+.texti{
+    font-family:Georgia, 'Times New Roman', Times, serif
+}

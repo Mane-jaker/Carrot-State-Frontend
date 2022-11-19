@@ -1,7 +1,13 @@
 function Register(){
     return(
         <>
-            <h1>Soy un Register</h1>
+            <div className="container">
+                <div className="row align-items-center">
+                    <div className="col-4">
+                        {/*cuadro-login*/}
+                    </div>
+                </div>
+            </div>
         </>
     )
 }
