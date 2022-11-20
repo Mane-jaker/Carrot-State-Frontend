@@ -1,0 +1,104 @@
+.Login{
+    height: 100vh;
+    display: flex;
+    background-image: url(../assets/imgporfile/loginimg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+}
+
+.Card{
+    display: flex;
+    border-radius: 15px;
+    height: 56%;
+    width: 52vh;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: rgba(220, 224, 230, 1);
+}
+
+.LoginTitle{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    font-size: 40px;
+}
+
+.FormColumn{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    width: 100%;
+    height: 60vh;
+}
+
+.Inputs{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.InputName{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 6px;
+    padding-left: 8px;
+}
+
+.InputPassword{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 6px;
+    padding-left: 28px;
+}
+
+.InputUser{
+    width: 45vh;
+    height: 5vh;
+    border-radius: 10px;
+    background-color: rgba(86, 126, 187, 1);
+}
+
+.InputContra{
+    width: 45vh;
+    height: 5vh;
+    border-radius: 10px;
+    background-color: rgba(86, 126, 187, 1);
+}
+
+.InputUser::placeholder{
+    color: white;
+}
+
+.InputContra::placeholder{
+    color: white;
+}
+
+.ButtonAtom{
+    display: flex;
+    justify-content: center;
+    padding: 60px;
+}
+
+.Tamaño{
+    background-color: rgba(43, 76, 126, 1);
+    border-radius: 15px;
+    width: 200px;
+}
+
+.LoginPie{
+    display: flex;
+    justify-content: center;
+}
+
+input{
+    height: 5vh;
+    width: 30vh;
+    border-radius: 15px;
+    background-color: rgba(43, 76, 126, 1);
+    
+}
