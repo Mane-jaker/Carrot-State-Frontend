@@ -3,7 +3,7 @@
 function NavBar() {
     return (
         <>
-            <div className="row backg-sidenav">
+            <div className="row top-nav backg-sidenav">{/*este esta en style general*/}
                 <div className="col-1">
                     <h1>logo</h1>
                 </div>
