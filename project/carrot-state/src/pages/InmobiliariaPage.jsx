@@ -3,9 +3,9 @@ import React from 'react'
 function InmobiliariaPage() {
   return (
     <>
-        <div className="row FondoDeg">
-            <div className="row FondoImg">
-                <div className="row NavBar">
+        <div className="row fondo-deg">
+            <div className="row fondo-img">
+                <div className="row nav-bar">
                     {/*nav*/}
                 </div>
                 <div className="row">
@@ -20,7 +20,7 @@ function InmobiliariaPage() {
             <div className="container">
                 {/*pagination*/}
             </div>
-            <div className="row FondoFooter">
+            <div className="row fondo-footer">
                 {/*footer*/}
             </div>
         </div>    

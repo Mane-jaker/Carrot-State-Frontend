@@ -1,20 +1,25 @@
+import Card from "./Card"
 
 
 function RowLocation() {
     return ( 
         <>
-            <div className="row">
-                <h2>Location</h2>
-            </div>
-            <div className="row">
-                <div className="col-4">
-
+            <div className="container ">
+                <div className="row justify-content-center">
+                    <div className="col-5 bor-location">
+                        <h2 className="hsblack">Location</h2>
+                    </div>
                 </div>
-                <div className="col-4">
-
-                </div>
-                <div className="col-4">
-
+                <div className="row mt">
+                    <div className="col-4">
+                        <Card />
+                    </div>
+                    <div className="col-4">
+                        <Card />
+                    </div>
+                    <div className="col-4">
+                        <Card />
+                    </div>
                 </div>
             </div>
         </>

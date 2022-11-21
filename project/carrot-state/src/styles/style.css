@@ -1,0 +1,112 @@
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    color: black;
+}
+
+/* Fondos */
+.fondo-img-pano{
+    background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.6)
+    ,rgba(0, 0, 0, 0.6)),
+    url(/src/assets/Img/panoramica.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: contain;
+    justify-content: center;
+    height: 50vh;
+    width: 100%;
+}
+
+.fondo-img{
+    background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.6)
+    ,rgba(0, 0, 0, 0.6)),
+    url(/src/assets/Img/panoramica.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: contain;
+    justify-content: center;
+    width: 100%;
+}
+
+.nav-bar{
+    background-color: transparent;
+    height: 14vh;
+}
+
+.nav-bar.color{
+    background-color: rgba(143, 198, 255, 1);
+    height: 14vh;
+}
+
+.fondo-deg{
+    background-image: 
+    url(/src/assets/Img/background.svg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    justify-content: center;
+}
+
+.fondo-footer{
+    background-color: rgb(255, 255, 255);
+    height: 20vh;
+}
+
+/* Textos */
+.hs{
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 1000;
+    font-size: 180%;
+    line-height: 100%;
+    text-align: center;
+}
+
+.hsblack{
+    color: black;
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 1000;
+    font-size: 180%;
+    line-height: 100%;
+    text-align: center;
+}
+
+.navp{
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 130%;
+    line-height: 100%;
+    text-align: center;
+}
+
+.foop{
+    color: black;
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 130%;
+    line-height: 100%;
+    text-align: center;
+}
+
+/* Utilidades */
+.bor{
+    border: solid 2px black;
+}
+
+.mt{
+    margin-top: 5%;
+}
+
+.btn:hover{
+    background-color: rgba(143, 198, 255, 1);
+}

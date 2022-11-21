@@ -3,13 +3,10 @@
 function RowBienvenida() {
     return ( 
         <>
-            <div className="row">
-                <div className="col-4">
-
-                </div>
-                <div className="col-8">
-
-                </div>
+            <div className="col-6">
+                <h2 className="hs">
+                    Vende, Compra o Renta con confianza y con seguridad 
+                </h2>
             </div>
         </>
      )

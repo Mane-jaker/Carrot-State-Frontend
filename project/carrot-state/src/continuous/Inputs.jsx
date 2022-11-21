@@ -1,10 +1,10 @@
 import '../assets/styles/stylesButton/Buttons.css'
 
-function Inputs ({Texto,Type,id}){
+function Inputs ({Texto,Type,id,clas}){
     return(
-        <div className="d-grid gap-2 col-2 mx-auto">
-            <a>{Texto}</a>
-            <input type={Type} className="form-control Inputs" id={id} />
+        <div className="col-10">
+            <p>{Texto}</p>
+            <input type={Type} className={clas} id={id} />
         </div>
     )
 }

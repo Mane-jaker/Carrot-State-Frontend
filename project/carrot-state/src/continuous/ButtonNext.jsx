@@ -1,4 +1,4 @@
-import '../assets/styles/stylesButton/Buttons.css'
+
 import siguienteImg from "../assets/Img/ImgStylesButton/siguiente.png"
 
 function buttonNext(){
@@ -6,7 +6,7 @@ function buttonNext(){
         <>
             <button 
             type="button" 
-            class="btn btn-success buttonNext">
+            class="btn btn-success button-next">
                 <img className="img-fluid" src={siguienteImg} alt="Siguiente"/>
             </button>
         </>

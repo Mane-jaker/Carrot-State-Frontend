@@ -1,28 +1,48 @@
-
+import '../styles/style.css'
+import logo from '../assets/Img/LogitoUwU1.png'
+import React,{useState, useEffect} from 'react'
 
 function NavBar() {
+    const[navBar, setNavbar] = useState(false)
+
+    const changeColor = () => {
+        if(window.scrollY>= 296){
+            setNavbar(true)
+        }else{
+            setNavbar(false)
+        }
+    }
+
+    window.addEventListener('scroll', changeColor)
+    
+
+    
     return (
         <>
-            <div className="row top-nav backg-sidenav">{/*este esta en style general*/}
-                <div className="col-1">
-                    <h1>logo</h1>
-                </div>
-                <div className="col-3">
-                    <h1>Carrot State</h1>
-                </div>
-                <div className="col-6 offset-2">
-                    <div className="row">
-                        <div className="col-3">
-                            Propiedades
-                        </div>
-                        <div className="col-3">
-                            Inmobiliarias
-                        </div>
-                        <div className="col-3">
-                            vender
-                        </div>
-                        <div className="col-3">
-                            Foto perfil
+            <div className={navBar ? 'nav-bar color' : 'nav-bar'}>{/*este esta en style general*/}
+                <div className="row align-items-center">
+                    <div className="col-1">
+                       <img src={logo} alt="ola" className='img-fluid' />
+                    </div>
+                    <div className="col-3">
+                    <a href="#" className='hs'><h1>Carroth State</h1></a>
+                    </div>  
+                    <div className="col-4 offset-4">
+                        <div className="row align-items-center">
+                            <div className="col-4">
+                                <a href="#" className="navp">Propiedades</a>
+                            </div>
+                            <div className="col-4">
+                                <a href="#" className="navp">Inmobiliarias</a>
+                            </div>
+                            <div className="col-2">
+                                <a href="#" className="navp">Vender</a>
+                            </div>
+                            <div className="col-2">
+                                <div>
+                                    <img src={logo} alt="olis" className='img-fluid'/>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
