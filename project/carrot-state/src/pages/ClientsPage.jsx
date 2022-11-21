@@ -1,11 +1,10 @@
-import '../assets/styles/stylesGlobal/GlobalWelcome.css'
-import '../assets/styles/stylesGlobal/GlobalBackground.css'
+
 
 function ClientsPage(){
     return(
         <>
             <div className="row">
-                <div className="row FondoImgPano">
+                <div className="row FondoImg">
                     <div className="row NavBar">
                         {/*nav*/}
                         pto

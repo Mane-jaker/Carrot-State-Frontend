@@ -1,15 +1,13 @@
+import '../styles/stylesGlobal/GlobalWelcome.css'
 
-import Card from "../components/Card";
-import '../assets/styles/stylesGlobal/GlobalNav.css'
 
 function Home(){
     return(
         <>
             <div className="row">
-                <div className="row FondoImg">
+                <div className="row FondoImgPano">
                     <div className="row NavBar">
                         {/*nav*/}
-                        colita
                     </div>
                     <div className="row">
                         {/*bienvenida */}
@@ -18,7 +16,6 @@ function Home(){
                 </div>    
                 <div className="row FondoDeg">
                     <div className="container">
-                        <Card/>
                         {/*pagination*/}
                     </div>  
                 </div>
