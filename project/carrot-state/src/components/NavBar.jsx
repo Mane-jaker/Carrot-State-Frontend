@@ -1,6 +1,6 @@
 import '../styles/style.css'
 import logo from '../assets/Img/LogitoUwU1.png'
-import React,{useState, useEffect} from 'react'
+import React,{useState} from 'react'
 
 function NavBar() {
     const[navBar, setNavbar] = useState(false)

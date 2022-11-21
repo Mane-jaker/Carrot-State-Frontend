@@ -2,6 +2,7 @@ import Footer from '../components/Footer';
 import NavBar from '../components/NavBar';
 import Pagination from '../components/Pagination';
 import RowBienvenida from '../components/RowBienvenida';
+import ButtonAbsolute from '../continuous/ButtonAbsolute';
 import '../styles/style.css'
 import '../styles/stylespage/home.css'
 
@@ -16,11 +17,13 @@ function Home(){
                     </div>
                     <div className="row align-items-center justify-content-center bie">
                         <RowBienvenida/>
+                        <ButtonAbsolute/>
                     </div>
                 </div>    
                 <div className="container-fluid">
                     <div className="container mt">
                         <Pagination />
+                        
                     </div>  
                 </div>
                 <div className="container-fluid fondo-footer mt">

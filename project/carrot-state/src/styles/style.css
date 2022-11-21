@@ -7,6 +7,10 @@ a:hover{
     color: black;
 }
 
+p{
+    color: rgb(31, 31, 32);
+}
+
 /* Fondos */
 .fondo-img-pano{
     background-image: 
@@ -107,6 +111,18 @@ a:hover{
     margin-top: 5%;
 }
 
+.mb{
+    margin-bottom: 5%;
+}
+
 .btn:hover{
     background-color: rgba(143, 198, 255, 1);
+}
+
+.h100{
+    height: 100vh;
+}
+
+.buttonAbsolute{
+    height: 20%;
 }

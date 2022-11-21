@@ -1,4 +1,4 @@
-import '../assets/styles/stylesButton/Buttons.css'
+
 
 function Inputs ({Texto,Type,id,clas}){
     return(

@@ -8,6 +8,7 @@ import Login from './pages/Login'
 import Register from './pages/Register'
 import UploadImg from './pages/UploadImg'
 import PopupItem from './components/PopupItem'
+import ItemRegister from './pages/ItemRegister'
 
 function App() {
   
@@ -24,6 +25,7 @@ function App() {
             <Route path='/clients' element={<ClientsPage/>}/>
             <Route path='/uploadImg' element={<UploadImg/>}/>
             <Route path='/popIt' element={<PopupItem/>}/>
+            <Route path='/registItem' element={<ItemRegister/>}/>
           </Routes>
         </BrowserRouter>
       </>

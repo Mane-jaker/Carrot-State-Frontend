@@ -1,0 +1,13 @@
+.logs{
+    background-color: #96AEDC;
+    border-radius: 20px;
+}
+
+.fonlog{
+    background-image:
+    url(/src/assets/Ksita_que_me_robe_de_internet.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    justify-content: center;
+}
