@@ -8,6 +8,7 @@ function AgentPage(){
     return(
         <>
             <div className="row">
+<<<<<<< HEAD
                 <div className="row FondoImg">
                     <div className="row NavBar">
                         {/*nav*/}
@@ -36,6 +37,31 @@ function AgentPage(){
                     {/*footer*/}
                 </div>
             </div>   
+=======
+                <div className="col-4">
+                    {/*side */}
+                </div>
+                <div className="col-8">
+                    <div className="row">
+                        <div className="col-8">
+                            {/*tittle */}
+                        </div>
+                    </div>
+                    <div className="row">
+                        <div className="col-8">
+                            {/*search */}
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
+            <div className="row">
+                
+                <div className="col-8">
+                    {/*card */}
+                </div>
+            </div>
+>>>>>>> parent of a5b9c9e (Caramba)
         </>
     )
 }

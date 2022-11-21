@@ -4,6 +4,7 @@ import '../assets/styles/stylesGlobal/GlobalBackground.css'
 function ClientsPage(){
     return(
         <>
+<<<<<<< HEAD
             <div className="row">
                 <div className="row FondoImgPano">
                     <div className="row NavBar">
@@ -28,6 +29,9 @@ function ClientsPage(){
                     {/*footer*/}
                 </div>             
             </div>    
+=======
+            <h1>Soy un ClientPage</h1>
+>>>>>>> parent of a5b9c9e (Caramba)
         </>
     )
 }
