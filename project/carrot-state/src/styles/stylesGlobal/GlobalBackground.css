@@ -1,0 +1,9 @@
+.FondoDeg{
+    background-image: 
+    url(/src/assets/Img/background.svg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    justify-content: center;
+    height: 50vh;
+}

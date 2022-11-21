@@ -7,8 +7,7 @@ import Card from "../components/Card"
 function AgentPage(){
     return(
         <>
-
-            <div className="row FondoDeg ">
+              <div className="row FondoDeg ">
                 <div className="row FondoImg">
                     <div className="row NavBar">
                         {/*nav*/}

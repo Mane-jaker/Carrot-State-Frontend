@@ -1,24 +1,23 @@
-
-import Card from "../components/Card";
-import '../assets/styles/stylesGlobal/GlobalNav.css'
+import '../styles/stylesGlobal/GlobalWelcome.css'
+import '../styles/stylesGlobal/GlobalBackground.css'
 
 function Home(){
     return(
         <>
-            <div className="row FondoDeg">
-                <div className="row FondoImg">
+            <div className="row">
+                <div className="row FondoImgPano">
                     <div className="row NavBar">
                         {/*nav*/}
-                        colita
                     </div>
                     <div className="row">
                         {/*bienvenida */}
                         colota
                     </div>
                 </div>    
-                <div className="container">
-                    <Card/>
-                    {/*pagination*/}
+                <div className="row FondoDeg">
+                    <div className="container">
+                        {/*pagination*/}
+                    </div>  
                 </div>
                 <div className="row FondoFooter">
                     {/*footer*/}
@@ -28,3 +27,5 @@ function Home(){
         </>
     )
 }
+
+export default Home;
