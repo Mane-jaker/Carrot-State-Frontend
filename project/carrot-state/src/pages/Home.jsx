@@ -1,5 +1,5 @@
 import '../styles/stylesGlobal/GlobalWelcome.css'
-
+import '../styles/stylesGlobal/GlobalBackground.css'
 
 function Home(){
     return(
