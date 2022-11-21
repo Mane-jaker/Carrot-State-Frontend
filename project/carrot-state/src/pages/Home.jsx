@@ -5,7 +5,7 @@ import '../assets/styles/stylesGlobal/GlobalNav.css'
 function Home(){
     return(
         <>
-            <div className="row FondoDeg">
+            <div className="row">
                 <div className="row FondoImg">
                     <div className="row NavBar">
                         {/*nav*/}
@@ -16,9 +16,11 @@ function Home(){
                         colota
                     </div>
                 </div>    
-                <div className="container">
-                    <Card/>
-                    {/*pagination*/}
+                <div className="row FondoDeg">
+                    <div className="container">
+                        <Card/>
+                        {/*pagination*/}
+                    </div>  
                 </div>
                 <div className="row FondoFooter">
                     {/*footer*/}

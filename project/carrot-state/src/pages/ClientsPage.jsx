@@ -1,27 +1,32 @@
+import '../assets/styles/stylesGlobal/GlobalWelcome.css'
+import '../assets/styles/stylesGlobal/GlobalBackground.css'
+
 function ClientsPage(){
     return(
         <>
-            <div className="row FondoDeg">
-                <div className="row FondoImg">
+            <div className="row">
+                <div className="row FondoImgPano">
                     <div className="row NavBar">
-                    {/*nav*/}
+                        {/*nav*/}
+                        pto
                     </div>
-                    <div className="row FondoPanoramica">
+                    <div className="row">
                         {/*bienvenida */}
                     </div>
-                </div>              
-                <div className="row">
-                    <div className="container">
-                        {/*text */}
+                </div>
+                <div className="row FondoDeg">
+                    <div className="row">
+                        <div className="container">
+                            {/*text */}
+                        </div>
                     </div>
-                </div>
-                
-                <div className="container">
-                    {/*locations*/}
-                </div>
+                    <div className="container">
+                        {/*locations*/}
+                    </div> 
+                </div>   
                 <div className="row FondoFooter">
                     {/*footer*/}
-                </div>
+                </div>             
             </div>    
         </>
     )
