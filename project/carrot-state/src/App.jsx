@@ -1,3 +1,13 @@
+import {BrowserRouter, Routes, Route} from 'react-router-dom'
+import AgentPage from './pages/AgentPage'
+import ClientsPage from './pages/ClientsPage'
+import ErrorPage from './pages/ErrorPage'
+import Home from './pages/Home'
+import ItemPage from './pages/ItemPage'
+import Login from './pages/Login'
+import Register from './pages/Register'
+import UploadImg from './pages/UploadImg'
+import PopupItem from './components/PopupItem'
 
 function App() {
   
