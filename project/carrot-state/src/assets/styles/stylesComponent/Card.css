@@ -1,0 +1,44 @@
+
+
+*{
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(12, 131, 255, 1);
+}
+
+
+/*card agente*/
+.agent{
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(12, 131, 255, 1);
+    border-radius: 1.5rem;
+}
+.personal-info{
+    border-radius: 1.5rem;
+    background-color: rgba(217, 217, 217, 1);
+    color: black;
+}
+
+/*card normal*/
+.card{
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(12, 131, 255, 1);
+    border-radius: 2rem;
+}
+.img{
+    border-radius: 2rem 2rem 0rem 0rem;
+}
+.ubication{
+    font-size: 2rem;
+    font-style: bold;
+    color: rgba(12, 131, 255, 1);
+}
+.description{
+    font-size: 1rem;
+    font-style: normal;
+    color: rgba(12, 131, 255, 1);
+}
+.price{
+    font-style: bold;
+    font-size: 1rem;
+    color: rgba(12, 131, 255, 1);
+}

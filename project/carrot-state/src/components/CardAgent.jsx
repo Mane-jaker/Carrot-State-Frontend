@@ -1,3 +1,4 @@
+/*Faltan nombres de clases */
 function CardAgent(){
     return(
         <div className="row">

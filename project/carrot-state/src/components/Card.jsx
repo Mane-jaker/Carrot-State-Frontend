@@ -2,14 +2,14 @@ import ButtonBlue from "../continuous/ButtonBlue"
 
 function Card() {
     return (
-        <div className="row Card">
-            <div className="row Img">
+        <div className="row card">
+            <div className="row img">
                 
             </div>
-            <div className="row Ubication">
+            <div className="row ubication">
 
             </div>
-            <div className="row Description">
+            <div className="row description">
 
             </div>
             <div className="row price">
