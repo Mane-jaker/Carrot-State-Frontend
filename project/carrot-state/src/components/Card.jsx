@@ -1,7 +1,7 @@
-import ButtonBlue from "../continuous/ButtonBlue"
 
 function Card() {
     return (
+<<<<<<< HEAD
         <div className="row card">
             <div className="row img">
                 
@@ -19,6 +19,11 @@ function Card() {
                 <ButtonBlue Texto="See more"/>
             </div>
         </div>
+=======
+    <>
+            <div className=""></div>
+    </>
+>>>>>>> parent of a5b9c9e (Caramba)
     )
 }
 export default Card

@@ -1,6 +1,7 @@
 function Register(){
     return(
         <>
+<<<<<<< HEAD
             <div className="row">
                 <div className="container">
                     <div className="row align-items-center">
@@ -10,6 +11,9 @@ function Register(){
                     </div>
                 </div>
             </div>
+=======
+            <h1>Soy un Register</h1>
+>>>>>>> parent of a5b9c9e (Caramba)
         </>
     )
 }

@@ -1,6 +1,7 @@
 function ItemPage(){
     return(
         <>
+<<<<<<< HEAD
             <div className="row">
                 <div className="container">
                     <div className="row">
@@ -27,6 +28,9 @@ function ItemPage(){
                     </div>
                 </div>
             </div>
+=======
+            <h1>Soy un ItemPage</h1>
+>>>>>>> parent of a5b9c9e (Caramba)
         </>
     )
 }
