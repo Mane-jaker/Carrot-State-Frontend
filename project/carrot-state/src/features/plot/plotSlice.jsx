@@ -16,10 +16,18 @@ export const plotSlice = createSlice({
     reducers: {
         addPlot: (state, action) => {
             state.push(action.payload)
+        },
+        updatePLot: (state, action) => {
+            state.put(action.payload)
+        },
+        deletePlot: (state, action) => {
+            state.delete(action.payload)
         }
      }
 });
 
 export const {addPlot} = plotSlice.actions;
+export const {updatePLot} = plotSlice.actions;
+export const {deletePlot} = plotSlice.actions;
 
 export default plotSlice.reducer;

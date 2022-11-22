@@ -13,11 +13,20 @@ export const clientSlice = createSlice({
     reducers: {
         addClient: (state, action) => {
             state.push(action.payload)
+        },
+
+        updateClient: (state, action) => {
+            state.put(action.payload)
+        },
+        deleteClient: (state, action) => {
+            state.delete(action.payload)
         }
     }
 }
 );
 
 export const {addClient} = clientSlice.actions;
+export const {updateClient} = clientSlice.actions;
+export const {deleteClient} = clientSlice.actions;
 
 export default clientSlice.reducer;

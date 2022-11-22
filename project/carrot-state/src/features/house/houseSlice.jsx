@@ -19,10 +19,18 @@ export const houseSlice = createSlice({
     reducers: {
         addHouse: (state, action) => {
             state.push(action.payload)
+        },
+        updateHouse:(state, action) =>{
+            state.put(action.payload)
+        },
+        deleteHouse:(state, action) =>{
+            state.delete(action.payload)
         }
     }
 });
 
 export const {addHouse} = houseSlice.actions;
+export const {updateHouse} =houseSlice.actions;
+export const {deleteHouse} = houseSlice.actions; 
 
 export default houseSlice.reducer;
