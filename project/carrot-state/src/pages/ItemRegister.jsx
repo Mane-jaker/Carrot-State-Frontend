@@ -5,6 +5,7 @@ import Select from '../continuous/Select'
 
 function ItemRegister(){
     const typ = "text"
+    const typ1 = "text"
     const clas ="form-control inp"
     const idu = "user"
     const clas1 = "form-select form-select-sm"
@@ -46,13 +47,13 @@ function ItemRegister(){
                                 </div>
                                 <div className="col-6">
                                     <div className="row justify-content-center">
-                                        <Inputs Texto={"Ciudad"} Type={typ} clas={clas} id={idu}/>
+                                        <Inputs Texto={"Tamaño del Terreno"} Type={typ} clas={clas} id={idu}/>
                                     </div>
                                     <div className="row justify-content-center">
-                                        <Inputs Texto={"Ciudad"} Type={typ} clas={clas} id={idu}/>
+                                        <Inputs Texto={"Precio"} Type={typ} clas={clas} id={idu}/>
                                     </div>
                                     <div className="row justify-content-center">
-                                        <Inputs Texto={"Ciudad"} Type={typ} clas={clas} id={idu}/>
+                                        <Inputs Texto={"Descripcion"} Type={typ} clas={clas} id={idu}/>
                                     </div>
                                 </div>
                             </div>
