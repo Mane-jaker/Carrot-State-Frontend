@@ -1,21 +1,18 @@
-/*Esta ya existe */
+
 function PopupItem() {
     return ( 
         <>
-        
-            <div className="row">
-                <div className="col-4 offset-4">{/*content space */}
-                    <div className="row">{/*twelve paces for... */}
-                        <div className="col">Titulo Popup</div>{/*max size */}
+            <div className="row fondo-deg popup">
+                <div className="col-4 thepop">{/*content space */}
+                    <div className="row elmtspop">{/*twelve paces for... */}
+                        <h3 className="poptittle">Titulo Popup</h3>
                         <div className="col">Subtitulo</div>{/*a 2~3 rem space */}
                         <div className="col">Main Content</div>{/*justified */}
-                        <div className="row">{/*popup options  */}
-                            <div className="col-6">option 1</div>
-                            <div className="col-6">option 3</div>
+                        <div className="col">
+                            <button type="button" class="btn btn-primary btn-sm">Aceptar</button>
                         </div>
                     </div>
                 </div>
-                <div className="col-4">space</div>
             </div>
         </>
     )

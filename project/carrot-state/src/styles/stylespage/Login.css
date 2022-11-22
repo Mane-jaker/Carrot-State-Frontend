@@ -5,9 +5,14 @@
 
 .fonlog{
     background-image:
-    url(/src/assets/Ksita_que_me_robe_de_internet.jpg);
+    url(/src/assets/img/Ksita.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     justify-content: center;
+}
+
+.button-size{
+    width: 30vh;
+    height: 5vh;
 }

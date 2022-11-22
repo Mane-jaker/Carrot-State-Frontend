@@ -2,7 +2,6 @@ import Footer from '../components/Footer';
 import NavBar from '../components/NavBar';
 import Pagination from '../components/Pagination';
 import RowBienvenida from '../components/RowBienvenida';
-import ButtonAbsolute from '../continuous/ButtonAbsolute';
 import '../styles/style.css'
 import '../styles/stylespage/home.css'
 
@@ -13,11 +12,10 @@ function Home(){
             <div className="row fondo-deg">
                 <div className="container-fluid fondo-img-pano">
                     <div className="row header nav-bar fixed-top">
-                        <NavBar />
+                        <NavBar isAgent={false}/>
                     </div>
                     <div className="row align-items-center justify-content-center bie">
                         <RowBienvenida/>
-                        <ButtonAbsolute/>
                     </div>
                 </div>    
                 <div className="container-fluid">
