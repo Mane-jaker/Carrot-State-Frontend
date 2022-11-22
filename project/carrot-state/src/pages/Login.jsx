@@ -84,7 +84,9 @@ function Login(){
                                 <Inputs Texto={"Password"} Type={typ} clas={clas} id={idu} xref={password}/>
                             </div>
                             <div className="row justify-content-center align-items-center mb ">
-                                <button type='button'className="btn btn-primary btn-lg button-size" onClick={handleOnClick}>log-in</button>
+                                <div className="col-5">
+                                    <button type='button'className="btn btn-primary w100" onClick={handleOnClick}>log-in</button>
+                                </div>
                             </div>
                         </div>
                     </div>

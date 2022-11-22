@@ -123,6 +123,9 @@ p{
     height: 100vh;
 }
 
+.w100{
+    width: 100%;
+}
 .buttonAbsolute{
     height: 20%;
 }
@@ -143,25 +146,7 @@ p{
     height: 10vh;
 }
 
-.popup{
-    width: 100vw;
-    height: 100vh;
-    align-items: center;
-}
-.thepop{
-    background-color: rgb(150 174 220);
-    border-radius: 1rem;
-    text-align: center;
-}
-.elmtspop{
-    text-align: center;
-    flex-direction: column;
-}
-.poptittle{
-    color: white;
-}
-
-/*another pop (nav-pop)*/
+/*another pop (nav-pop)
 .dispPop{
     width: 40%;
     border-radius: 1rem;
@@ -174,7 +159,7 @@ p{
     display: none;
 }
 .notdispop{
-    /*display: -moz-popup; no se como usar esa wea*/
+    display: -moz-popup; no se como usar esa wea
     display: inline;
 }
 .quesos{
@@ -185,4 +170,4 @@ p{
 }
 .containerpop{
     width: 100%;
-}
+}*/

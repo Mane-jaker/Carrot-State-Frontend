@@ -56,26 +56,6 @@ function NavBar({isAgent}) {
                                     <div className="col-4">
                                         <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" className="navp">Login</a>
                                     </div>
-                                        <div class="modal fade" data-bs-backdrop="static" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                        <div class="modal-dialog">
-                                            <div class="modal-content">
-                                            <div class="modal-header">
-                                                <h5 class="modal-title">Que sos?</h5>
-                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                            </div>
-                                            <div class="modal-body">
-                                                <div className='row quesosbtns'>
-                                                            <div className="col-4"><Link to={"/login/client"} class="btn btn-primary" id="clientebtn">Cliente</Link></div>
-                                                            <div className="col-4"><Link to={"/login/agent"}  class="btn btn-primary" id="agentebtn">Agente</Link></div>
-                                                            <div className="col-4"><Link to={"/login/real-state"} class="btn btn-primary" id="inmobilbtn">Inmobiliaria</Link></div>
-                                                </div>
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                            </div>
-                                            </div>
-                                        </div>
-                                        </div>
                                     <div className="col-4">
                                         <Link to={"/register"} className="navp" >register</Link>
                                     </div>
