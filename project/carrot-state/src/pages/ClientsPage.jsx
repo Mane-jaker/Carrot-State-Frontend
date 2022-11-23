@@ -11,7 +11,7 @@ function ClientsPage(){
             <div className="row fondo-deg">
                 <div className="container-fluid fondo-img-pano">
                     <div className="row header nav-bar fixed-top">
-                        <NavBar isAgent={2}/>
+                        <NavBar isAgent={4}/>
                     </div>
                     <div className="row align-items-center justify-content-center bie">
                         <RowBienvenida text={"Vende, Compra o Renta con confianza y con seguridad"}/>

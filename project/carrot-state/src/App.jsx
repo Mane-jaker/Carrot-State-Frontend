@@ -1,4 +1,5 @@
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
+import {useSelector} from 'react-redux'
 import AgentPage from './pages/AgentPage'
 import ClientsPage from './pages/ClientsPage'
 import ErrorPage from './pages/ErrorPage'
@@ -14,8 +15,12 @@ import InmobiliariaPage from './pages/InmobiliariaPage'
 
 function App() {
   //localhost:5173/login/agent
-  // const {loginType} = useParams();
+  // const {loginType} = useParams(); 
+
+  const agentState = useSelector(state=> state.agents)
+  console.log(agentState)
   return (
+    //NOJAO ):(
       <>
         <BrowserRouter>
           <Routes>
@@ -26,7 +31,7 @@ function App() {
             </Route> 
             <Route path='/register' element={<Register/>}/>
             <Route path='/agentPage'>
-              <Route path=':idAgent' element={<AgentPage/>} /> 
+              <Route path=':idAgent' element={<AgentPage/>} />    
             </Route>
             <Route path='/item' element={<ItemPage/>}/>
             <Route path='/clients' element={<ClientsPage/>}/>
@@ -35,7 +40,9 @@ function App() {
             <Route path='/registItem'>
               <Route path=':idAgent' element={<ItemRegister/>}></Route> 
             </Route>
-            <Route path='/InmobiliPage' element={<InmobiliariaPage/>}></Route>
+            <Route path='/InmobiliPage' element={<InmobiliariaPage/>}>
+            <Route path=':idAgent' element={<ItemRegister/>}></Route> 
+            </Route>
           </Routes>
         </BrowserRouter>
       </>

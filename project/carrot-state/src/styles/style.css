@@ -30,7 +30,6 @@ p{
     url(/src/assets/Img/panoramica.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-attachment: local;
     background-size: contain;
     justify-content: center;
     height: 50vh;

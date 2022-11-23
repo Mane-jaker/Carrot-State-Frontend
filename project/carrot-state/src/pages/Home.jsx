@@ -2,7 +2,7 @@ import Footer from '../components/Footer';
 import NavBar from '../components/NavBar';
 import Pagination from '../components/Pagination';
 import RowBienvenida from '../components/RowBienvenida';
-import '../styles/style.css'
+import '../styles/style.css' 
 import '../styles/stylespage/home.css'
 import { Link } from 'react-router-dom';
 
@@ -22,7 +22,6 @@ function Home(){
                 <div className="container-fluid">
                     <div className="container mt">
                         <Pagination />
-                        
                     </div>  
                 </div>
                 <div className="container-fluid fondo-footer mt">

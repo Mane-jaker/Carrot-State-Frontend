@@ -23,8 +23,6 @@ function InmobiliariaPage() {
                 </div>
             </div>
             <div className="container">
-                <Pagination/>
-                {/*pagination >> Esta madre esta culera*/}
                 <CardAgent/>
             </div>
             <div className="row fondo-footer">

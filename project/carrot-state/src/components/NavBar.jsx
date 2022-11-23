@@ -76,6 +76,21 @@ function NavBar({isAgent}) {
                                     </div>
                                 </>
                             )}
+                            {isAgent == 4 && (
+                                <>
+                                    <div className="col-4">
+                                        <a href="#" className="navp">Clientes</a>
+                                    </div>
+                                    <div className="col-4">
+                                        <a href="#" className="navp">Propiedades</a>
+                                    </div>
+                                    <div className="col-2">
+                                        <div>
+                                            <img src={logo} alt="olis" className='img-fluid'/>
+                                        </div>
+                                    </div>
+                                </>
+                            )}
                         </div>
                     </div>
                 </div>
