@@ -3,17 +3,20 @@ function CardAgent(){
     return(
         <div className="row">
             <div className="col-3">
-
+                <img src="https://www.bing.com/th?id=ORMS.903a5dd2f37f45749f4ffcd7385c2bf8&pid=Wdp&w=300&h=156&qlt=90&c=1&rs=1&dpr=0.9375&p=0" alt="ola" />
             </div>
             <div className="col-9">
                 <div className="row">
 
                 </div>
                 <div className="row">
-
+                    <div className="col-4"></div>
+                    <div className="col-8"></div>
                 </div>
                 <div className="row">
-
+                    <div className="col-4">Estado</div>
+                    <div className="col-4">Ventas</div>
+                    <div className="col-4">Propiedades</div>
                 </div>
             </div>
         </div>

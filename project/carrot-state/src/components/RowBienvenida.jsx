@@ -1,11 +1,11 @@
 
 
-function RowBienvenida() {
+function RowBienvenida({texto}) {
     return ( 
         <>
             <div className="col-6">
                 <h2 className="hs">
-                    Vende, Compra o Renta con confianza y con seguridad 
+                    {texto}
                 </h2>
             </div>
         </>

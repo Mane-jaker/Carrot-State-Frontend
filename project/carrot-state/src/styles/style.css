@@ -11,6 +11,17 @@ p{
     color: rgb(31, 31, 32);
 }
 
+.buttonAdd{
+    height: 60px;
+    width: 60px;
+    padding: 0;
+    margin-left: 10%;
+    background-color: rgba(227, 164, 164, 1); 
+    position: fixed;
+    bottom: 10vh;
+    right: 5vh;
+}
+
 /* Fondos */
 .fondo-img-pano{
     background-image: 
@@ -25,17 +36,6 @@ p{
     width: 100%;
 }
 
-.fondo-img{
-    background-image: 
-    linear-gradient(rgba(0, 0, 0, 0.6)
-    ,rgba(0, 0, 0, 0.6)),
-    url(/src/assets/Img/panoramica.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: contain;
-    justify-content: center;
-    width: 100%;
-}
 
 .nav-bar{
     background-color: transparent;
@@ -123,6 +123,51 @@ p{
     height: 100vh;
 }
 
+.w100{
+    width: 100%;
+}
 .buttonAbsolute{
     height: 20%;
 }
+
+/*error*/
+.errorpg{
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    align-items: center;
+}
+.notnotcarrot{
+    width: 60%;
+    height: auto;
+}
+
+.tamaño{
+    height: 10vh;
+}
+
+/*another pop (nav-pop)
+.dispPop{
+    width: 40%;
+    border-radius: 1rem;
+    background-color: rgb(150 174 220);
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    display: none;
+}
+.notdispop{
+    display: -moz-popup; no se como usar esa wea
+    display: inline;
+}
+.quesos{
+    color: white;
+}
+.quesosbtns{
+    justify-content: space-around;
+}
+.containerpop{
+    width: 100%;
+}*/
