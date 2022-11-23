@@ -11,10 +11,10 @@ function ClientsPage(){
             <div className="row fondo-deg">
                 <div className="container-fluid fondo-img-pano">
                     <div className="row header nav-bar fixed-top">
-                        <NavBar />
+                        <NavBar isAgent={2}/>
                     </div>
                     <div className="row align-items-center justify-content-center bie">
-                        <RowBienvenida />
+                        <RowBienvenida text={"Vende, Compra o Renta con confianza y con seguridad"}/>
                     </div>
                 </div>              
                 <div className="row mt">

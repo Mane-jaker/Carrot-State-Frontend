@@ -13,10 +13,10 @@ function Home(){
             <div className="row fondo-deg">
                 <div className="container-fluid fondo-img-pano">
                     <div className="row header nav-bar fixed-top">
-                        <NavBar isAgent={false}/>
+                        <NavBar isAgent={1}/>
                     </div>
                     <div className="row align-items-center justify-content-center bie">
-                        <RowBienvenida/>
+                        <RowBienvenida texto={"Vende, Compra o Renta con confianza y con seguridad"}/>
                     </div>
                 </div>    
                 <div className="container-fluid">

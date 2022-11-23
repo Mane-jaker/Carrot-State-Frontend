@@ -33,7 +33,7 @@ function NavBar({isAgent}) {
                     </div>  
                     <div className="col-4 offset-4">
                         <div className="row align-items-center">
-                            {isAgent && (
+                            {isAgent == 2 && (
                                 <>
                                     <div className="col-4">
                                         <a href="#" className="navp">Propiedades</a>
@@ -51,13 +51,28 @@ function NavBar({isAgent}) {
                                     </div>
                                 </>
                             )}
-                            {!isAgent && (
+                            {isAgent == 1 && (
                                 <>
                                     <div className="col-4">
                                         <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" className="navp">Login</a>
                                     </div>
                                     <div className="col-4">
                                         <Link to={"/register"} className="navp" >register</Link>
+                                    </div>
+                                </>
+                            )}
+                            {isAgent == 3 && (
+                                <>
+                                    <div className="col-4">
+                                        <a href="#" className="navp">Agentes</a>
+                                    </div>
+                                    <div className="col-4">
+                                        <a href="#" className="navp">Propiedades</a>
+                                    </div>
+                                    <div className="col-2">
+                                        <div>
+                                            <img src={logo} alt="olis" className='img-fluid'/>
+                                        </div>
                                     </div>
                                 </>
                             )}

@@ -9,6 +9,7 @@ import Register from './pages/Register'
 import UploadImg from './pages/UploadImg'
 import PopupItem from './components/PopupItem'
 import ItemRegister from './pages/ItemRegister'
+import InmobiliariaPage from './pages/InmobiliariaPage'
 
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
             <Route path='/registItem'>
               <Route path=':idAgent' element={<ItemRegister/>}></Route> 
             </Route>
+            <Route path='/InmobiliPage' element={<InmobiliariaPage/>}></Route>
           </Routes>
         </BrowserRouter>
       </>
