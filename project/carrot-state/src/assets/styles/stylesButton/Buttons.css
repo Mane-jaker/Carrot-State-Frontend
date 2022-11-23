@@ -1,8 +1,10 @@
 .buttonBack{
-    height: 100%;
-    width: 80%;
+    height: 60px;
+    width: 60px;
     padding: 0;
     margin-left: 10%;
+    background-color: rgba(227, 164, 164, 1);
+    
 }
 
 .RetrocesoImg{
@@ -10,7 +12,7 @@
 }
 
 .ButtonBlue{
-    background-color: rgba(43, 76, 126, 1);
+    background-color: rgba(227, 164, 164, 1);
 }
 
 .ButtonBlack{

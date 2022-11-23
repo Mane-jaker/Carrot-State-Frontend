@@ -1,5 +1,6 @@
 
 import Card from "../components/Card";
+import ButtonBack from "../continuous/ButtonBack";
 import '../assets/styles/stylesGlobal/GlobalNav.css'
 
 function Home(){
@@ -9,6 +10,7 @@ function Home(){
                 <div className="row FondoImg">
                     <div className="row NavBar">
                         {/*nav*/}
+                        <ButtonBack/>
                         colita
                     </div>
                     <div className="row">

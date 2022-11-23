@@ -5,7 +5,7 @@ function ButtonBlue ({Texto}){
         <>
             <button 
             type="button" 
-            className="btn btn-primary btn-lg ButtonBlue" 
+            className="btn btn-error btn-lg ButtonBlue" 
             >
                 {Texto}
             </button>

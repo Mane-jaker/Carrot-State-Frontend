@@ -1,11 +1,16 @@
-.backg-home{
-
+.button-transparent{
+    height: 100%;
+    width: 48%;
+    position: absolute;
+    background-size: contain;
+    background-color: transparent ;
+    border: 0ch;
 }
 
-.backg-nav{
+.venta{
+    background-image: url(/src/assets/Img/ImgStylesButton/venta.jpg);
+    background-repeat: no-repeat;
 
-}
-
-.backg-imgpub{
-    
+    background-size: contain;
+    height: 50vh;
 }
