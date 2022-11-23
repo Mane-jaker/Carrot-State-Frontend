@@ -1,5 +1,5 @@
 import React from 'react'
-import CardAgent from '../components/CardAgent'
+import CardAgent from '../components/CardAgent' 
 import NavBar from '../components/NavBar'
 import RowBienvenida from '../components/RowBienvenida'
 import Pagination from '../components/Pagination'
@@ -9,7 +9,7 @@ function InmobiliariaPage() {
   return (
     <>
         <div className="row fondo-deg">
-            <div className="row fondo-img-pano">
+            <div className="row fondo-img">
                 <div className="row header nav-bar fixed-top">
                     <NavBar isAgent={1}/>
                 </div>

@@ -30,6 +30,20 @@ p{
     url(/src/assets/Img/panoramica.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-attachment: local;
+    background-size: contain;
+    justify-content: center;
+    height: 50vh;
+    width: 100%;
+}
+
+.fondo-img{
+    background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.6)
+    ,rgba(0, 0, 0, 0.6)),
+    url(/src/assets/Img/ksitaPano.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: contain;
     justify-content: center;
     height: 50vh;
