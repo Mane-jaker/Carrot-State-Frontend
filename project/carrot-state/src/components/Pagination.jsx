@@ -48,7 +48,7 @@ function Pagination({forAgent}) {
                   <Card title={houses.name} 
                   imj={"https://conejobucket.s3.us-east-2.amazonaws.com/persons/default/property/house/casas-ecolo%CC%81gicas_apertura-hogar-sostenibilidad-certificado--1024x629.jpg"} 
                   desc={houses.description}
-                  price={houses.price + "$"}/>
+                  price={"$" + houses.price}/>
                 </div>
               ))
             }
@@ -61,7 +61,7 @@ function Pagination({forAgent}) {
                   <Card title={houses.name} 
                   imj={"https://conejobucket.s3.us-east-2.amazonaws.com/persons/default/property/house/casas-ecolo%CC%81gicas_apertura-hogar-sostenibilidad-certificado--1024x629.jpg"} 
                   desc={houses.description}
-                  price={houses.price + "$"}/>
+                  price={"$" + houses.price}/>
                 </div>
               ))
             }
@@ -74,7 +74,7 @@ function Pagination({forAgent}) {
                 <Card title={premises.name} 
                 imj={"https://conejobucket.s3.us-east-2.amazonaws.com/persons/default/property/house/casas-ecolo%CC%81gicas_apertura-hogar-sostenibilidad-certificado--1024x629.jpg"} 
                 desc={premises.description}
-                price={premises.price + "$"}/>
+                price={"$" + premises.price}/>
               </div>
             ))
           }

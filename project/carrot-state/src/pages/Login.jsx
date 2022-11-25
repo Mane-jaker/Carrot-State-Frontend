@@ -8,6 +8,7 @@ import '../styles/stylespage/Login.css'
 function Login(){
 
     const typ = "text"
+    const pas = "password"
     const clas ="form-control inp"
     const idu = "user"
 
@@ -81,7 +82,7 @@ function Login(){
                                 <Inputs Texto={"Email"} Type={typ} clas={clas} id={idu} xref={email}/>
                             </div>
                             <div className="row justify-content-center mb">
-                                <Inputs Texto={"Password"} Type={typ} clas={clas} id={idu} xref={password}/>
+                                <Inputs Texto={"Password"} Type={pas} clas={clas} id={idu} xref={password}/>
                             </div>
                             <div className="row justify-content-center align-items-center mb ">
                                 <div className="col-5">

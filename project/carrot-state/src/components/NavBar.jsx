@@ -57,7 +57,7 @@ function NavBar({isAgent}) {
                                         <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" className="navp">Login</a>
                                     </div>
                                     <div className="col-4">
-                                        <Link to={"/register"} className="navp" >register</Link>
+                                        <Link to={"/register"} className="navp" >Register</Link>
                                     </div>
                                 </>
                             )}
