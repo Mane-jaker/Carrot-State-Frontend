@@ -136,6 +136,10 @@ p{
     height: 100vh;
 }
 
+.h100p{
+    height: 100%;
+}
+
 .w100{
     width: 100%;
 }
@@ -153,10 +157,6 @@ p{
 .notnotcarrot{
     width: 60%;
     height: auto;
-}
-
-.tamaño{
-    height: 10vh;
 }
 
 /*another pop (nav-pop)

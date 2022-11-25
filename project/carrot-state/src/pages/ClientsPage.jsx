@@ -9,33 +9,32 @@ function ClientsPage(){
     return(
         <>
             <div className="row fondo-deg">
-                <div className="container-fluid fondo-img-pano">
+                <section className="container-fluid fondo-img-pano">
                     <div className="row header nav-bar fixed-top">
                         <NavBar isAgent={4}/>
                     </div>
                     <div className="row align-items-center justify-content-center bie">
                         <RowBienvenida text={"Vende, Compra o Renta con confianza y con seguridad"}/>
                     </div>
-                </div>              
+                </section>              
                 <div className="row mt">
-                    <div className="container">
+                    <section className="container">
                         <div className="row justify-content-center">
                             <div className="col-4">
                                 <h2 className='hsblack'>Propiedades en donde tu quieras!!!</h2>
                             </div>
                         </div>
-                    </div>
+                    </section>
                 </div>
-                
                 <div className="container-fluid mt">
                     <div className="container">
                         <RowLocation />
                     </div>
                 </div>
-                <div className="row fondo-footer mt">
+                <section className="row fondo-footer mt">
                     <Footer />
-                </div>
-            </div>    
+                </section>
+            </div>
         </>
     )
 }

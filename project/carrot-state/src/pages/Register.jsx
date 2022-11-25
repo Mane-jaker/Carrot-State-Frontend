@@ -72,29 +72,31 @@ function Register(){
 
     useEffect(() =>{}, [selected])
     
-    const typ = "text"
+    const typ = "password"
     const clas ="form-control inp"
     const idu = "user"
     return(
         <>
-            <div className="row fonlog">
+            <div className="row fonlog">{/*puede ser un article? */}
                 <div className="container">
                     <div className="row align-items-center justify-content-center h100">
-                        <div className="col-4 logs">
+                        <section className="col-4 logs">
                             <div className="row mt">
                                 <h1 className="hs">Registro</h1>
                             </div>
-                            <div className="row align-items-center justify-content-center ">
-                            <div className="row align-items-center justify-content-center tamaño">
-                                <p>opciones de registro</p>
-                                <select className={"select-size"} aria-label=".form-select-sm example" ref={option} onChange={handlerOnChange}>
-                                    <option selected>¿Que tipo de registro desea?</option>
-                                    <option value="agente">Agente</option>
-                                    <option value="inmobiliaria">Inmobiliaria</option>
-                                    <option value="cliente">Cliente</option>
-                                </select>
-                            </div>
-                            </div>
+                            <section className="row align-items-center justify-content-center ">
+                                <div className="col-10 ">
+                                    
+                                    <Select titulo={"Opciones de registro"} id={"select-register"} optional={option} change={handlerOnChange}/>
+                                    
+                                    {/*<select className={"select-size"} aria-label=".form-select-sm example" ref={option} onChange={handlerOnChange}>
+                                        <option selected>¿Que tipo de registro desea?</option>
+                                        <option value="agente">Agente</option>
+                                        <option value="inmobiliaria">Inmobiliaria</option>
+                                        <option value="cliente">Cliente</option>
+                                    </select>*/}
+                                </div>
+                            </section>
                             <div className="row justify-content-center">
                                 <Inputs Texto={"Username"} Type={typ} clas={clas} id={idu} xref={name}/>
                             </div>
@@ -115,9 +117,11 @@ function Register(){
                                 </div>
                             )}
                             <div className="row justify-content-center align-items-center mb ">
-                                <button type='button'className="btn btn-primary btn-lg button-size mb mt" onClick={handleOnClick}>Register</button>
+                                <div className="col-5">
+                                    <button type='button'className="btn btn-primary w100" onClick={handleOnClick}>Register</button>
+                                </div>
                             </div>
-                        </div>
+                        </section>
                     </div>
                 </div>
             </div>

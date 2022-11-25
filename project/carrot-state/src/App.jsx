@@ -11,14 +11,12 @@ import UploadImg from './pages/UploadImg'
 import PopupItem from './components/PopupItem'
 import ItemRegister from './pages/ItemRegister'
 import InmobiliariaPage from './pages/InmobiliariaPage'
+import AgentForm from './componentsRedux/AgentForm'
 
 
 function App() {
   //localhost:5173/login/agent
   // const {loginType} = useParams(); 
-
-  const agentState = useSelector(state=> state.agents)
-  console.log(agentState)
   return (
     //NOJAO ):(
       <>
@@ -43,6 +41,7 @@ function App() {
             <Route path='/InmobiliPage' element={<InmobiliariaPage/>}>
             <Route path=':idAgent' element={<ItemRegister/>}></Route> 
             </Route>
+            <Route path='/carloxd' element={<AgentForm/>}/>
           </Routes>
         </BrowserRouter>
       </>

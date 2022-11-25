@@ -6,11 +6,11 @@ function Card({imj,title,desc,price}) {
     const clas = "btn btcard"
 
     return (
-        <div className="card text-center mt">
+        <section className="card text-center mt">
             <div className="row img">
                 <img src={imj} class="card-img-top" alt="..."/>
             </div>
-            <div className="row card-body">
+            <section className="row card-body">
                 <div className="mt">
                     <p><h5 class="card-title">{title}</h5></p>
                 </div>
@@ -23,8 +23,8 @@ function Card({imj,title,desc,price}) {
                 <div className="mt">
                     <Button Texto="See more" typ={typ} clas={clas}/>
                 </div>
-            </div>
-        </div>
+            </section>
+        </section>
     )
 }
 export default Card
