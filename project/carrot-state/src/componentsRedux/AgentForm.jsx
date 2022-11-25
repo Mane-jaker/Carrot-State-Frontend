@@ -1,17 +1,41 @@
-import {useSelector} from 'react-redux'
+import { useState } from 'react'
+import {useDispatch} from 'react-redux'
+import {addAgent} from '../features/agent/AgentSlice'
+import {v4 as uuid} from 'uuid'
+
 
 function AgentForm (){
-    console.log('AgentForm')
+    
+    const [agent, setAgent] = useState({
+        title: '',
+        description: ''
+    })
 
-    const stateAgent = useSelector(state => state.agents)
-    console.log(stateAgent)
+    const dispatch =useDispatch()
+
+    const handleChange = e => {
+        setAgent({
+            ...agent,
+            [e.target.name]: e.target.value,
+        })
+    }
+
+    const handleSubmit =(e) =>{
+        e.preventDefault();
+        dispatch(addAgent({
+            ...agent,
+            id: uuid(),
+        }))
+    }
 
     return (
-        <div>
-            <h1>
-                AgentForm
-            </h1>
-        </div>
+        <form onSubmit={handleSubmit}>
+            <input name='title' type="text" placeholder='title' onChange={handleChange} />
+
+            <textarea name="description" placeholder='description' onChange={handleChange}></textarea>
+
+            <button>save</button>
+        </form>
     )
 }
 

@@ -11,7 +11,7 @@ import UploadImg from './pages/UploadImg'
 import PopupItem from './components/PopupItem'
 import ItemRegister from './pages/ItemRegister'
 import InmobiliariaPage from './pages/InmobiliariaPage'
-import AgentForm from './componentsRedux/AgentForm'
+import Prueba from './componentsRedux/Prueba'
 
 
 function App() {
@@ -41,7 +41,7 @@ function App() {
             <Route path='/InmobiliPage' element={<InmobiliariaPage/>}>
             <Route path=':idAgent' element={<ItemRegister/>}></Route> 
             </Route>
-            <Route path='/carloxd' element={<AgentForm/>}/>
+            <Route path='/carloxd' element={<Prueba/>}/>
           </Routes>
         </BrowserRouter>
       </>
