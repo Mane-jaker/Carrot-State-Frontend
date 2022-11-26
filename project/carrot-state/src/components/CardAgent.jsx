@@ -7,16 +7,26 @@ function CardAgent(){
             </div>
             <div className="col-9">
                 <div className="row">
-
+                    <div className="col-4">Email</div>
+                    <div className="col-8">space</div>
                 </div>
                 <div className="row">
-                    <div className="col-4"></div>
-                    <div className="col-8"></div>
+                    <div className="col-4">Nombre</div>
+                    <div className="col-8">space</div>
                 </div>
                 <div className="row">
-                    <div className="col-4">Estado</div>
-                    <div className="col-4">Ventas</div>
-                    <div className="col-4">Propiedades</div>
+                    <div className="row">{/*4 */}
+                        <div className="col">Estado</div>
+                        <div className="col">space</div>
+                    </div>
+                    <div className="row">{/*4 */}
+                        <div className="col">ventas</div>
+                        <div className="col">space</div>
+                    </div>
+                    <div className="row">{/*4 */}
+                        <div className="col">Propiedades</div>
+                        <div className="col">space</div>
+                    </div>
                 </div>
             </div>
         </div>
