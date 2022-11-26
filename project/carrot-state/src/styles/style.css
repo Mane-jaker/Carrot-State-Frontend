@@ -36,6 +36,19 @@ p{
     width: 100%;
 }
 
+.fondo-img{
+    background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.6)
+    ,rgba(0, 0, 0, 0.6)),
+    url(/src/assets/Img/ksitaPano.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: contain;
+    justify-content: center;
+    height: 50vh;
+    width: 100%;
+}
+
 
 .nav-bar{
     background-color: transparent;
@@ -123,6 +136,10 @@ p{
     height: 100vh;
 }
 
+.h100p{
+    height: 100%;
+}
+
 .w100{
     width: 100%;
 }
@@ -140,10 +157,6 @@ p{
 .notnotcarrot{
     width: 60%;
     height: auto;
-}
-
-.tamaño{
-    height: 10vh;
 }
 
 /*another pop (nav-pop)

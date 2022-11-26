@@ -1,5 +1,5 @@
 
-function PopupItem() {
+function PopupItem() { {/*este popup va a servir? :v */}
     return ( 
         <>
             <div className="row fondo-deg popup">

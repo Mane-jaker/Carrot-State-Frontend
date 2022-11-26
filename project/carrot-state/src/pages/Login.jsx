@@ -73,7 +73,7 @@ function Login(){
             <div className="row fonlog ">
                 <div className="container ">
                     <div className="row align-items-center justify-content-center h100">
-                        <div className="col-4 logs justify-content-center align-items-center">
+                        <section className="col-4 logs justify-content-center align-items-center">
                             <div className="row mt">
                                 <h1 className="hs">Log-in</h1>
                             </div>
@@ -88,7 +88,7 @@ function Login(){
                                     <button type='button'className="btn btn-primary w100" onClick={handleOnClick}>log-in</button>
                                 </div>
                             </div>
-                        </div>
+                        </section>
                     </div>
                 </div>
             </div>

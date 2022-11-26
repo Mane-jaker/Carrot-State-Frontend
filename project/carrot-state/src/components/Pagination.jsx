@@ -37,7 +37,7 @@ function Pagination({forAgent}) {
 
   return (
     <>
-        <div className="row ">
+        <section className="row ">
           <div className="row justify-content-center aling-item-center">
             <h2 className='mt'>Casas</h2>
           </div>
@@ -52,8 +52,8 @@ function Pagination({forAgent}) {
                 </div>
               ))
             }
-        </div>
-        <div className='row'>
+        </section>
+        <section className='row'>
           <h2 className='mt'>Terrenos</h2>
             {
               dataPlots && dataPlots.map(houses => ( 
@@ -65,8 +65,8 @@ function Pagination({forAgent}) {
                 </div>
               ))
             }
-        </div>
-        <div className='row'>
+        </section>
+        <section className='row'>
           <h2 className='mt'>Locales</h2>
           {
             dataPremises && dataPremises.map(premises =>( 
@@ -78,7 +78,7 @@ function Pagination({forAgent}) {
               </div>
             ))
           }
-        </div>
+        </section>
     </>
   )
 }

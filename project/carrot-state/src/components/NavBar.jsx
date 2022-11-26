@@ -33,24 +33,6 @@ function NavBar({isAgent}) {
                     </div>  
                     <div className="col-4 offset-4">
                         <div className="row align-items-center">
-                            {isAgent == 2 && (
-                                <>
-                                    <div className="col-4">
-                                        <a href="#" className="navp">Propiedades</a>
-                                    </div>
-                                    <div className="col-4">
-                                        <a href="#" className="navp">Inmobiliarias</a>
-                                    </div>
-                                    <div className="col-2">
-                                        <a href="#" className="navp">Vender</a>
-                                    </div>
-                                    <div className="col-2">
-                                        <div>
-                                            <img src={logo} alt="olis" className='img-fluid'/>
-                                        </div>
-                                    </div>
-                                </>
-                            )}
                             {isAgent == 1 && (
                                 <>
                                     <div className="col-4">
@@ -61,13 +43,46 @@ function NavBar({isAgent}) {
                                     </div>
                                 </>
                             )}
-                            {isAgent == 3 && (
+                            {isAgent == 2 && (
                                 <>
                                     <div className="col-4">
                                         <a href="#" className="navp">Agentes</a>
                                     </div>
                                     <div className="col-4">
                                         <a href="#" className="navp">Propiedades</a>
+                                    </div>
+                                    <div className="col-2">
+                                        <div>
+                                            <img src={logo} alt="olis" className='img-fluid'/>
+                                        </div>
+                                    </div>
+                                </>
+                            )}
+                            {isAgent == 3 && (
+                                <>
+                                    <div className="col-4">
+                                        <a href="#" className="navp">Propiedades</a>
+                                    </div>
+                                    <div className="col-4">
+                                        <a href="#" className="navp">Clientes</a>
+                                    </div>
+                                    <div className="col-2">
+                                        <div>
+                                            <img src={logo} alt="olis" className='img-fluid'/>
+                                        </div>
+                                    </div>
+                                </>
+                            )}
+                            {isAgent == 4 && (
+                                <>
+                                    <div className="col-4">
+                                        <a href="#" className="navp">Inmobiliarias</a>
+                                    </div>
+                                    <div className="col-4">
+                                        <a href="#" className="navp">Propiedades</a>
+                                    </div>
+                                    <div className="col-2">
+                                        <a href="#" className="navp">Vender</a>
                                     </div>
                                     <div className="col-2">
                                         <div>

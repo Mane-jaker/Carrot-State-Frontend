@@ -66,7 +66,7 @@ function ItemRegister() {
                 <h1 className="hs">Registro de Casa</h1>
               </div>
               <div className="row mb">
-                <div className="col-6">
+                <section className="col-6">
                   <div className="row justify-content-center">
                     <Inputs Texto={"Titulo"} Type={typ} clas={clas} id={idu} xref={titulo}/>
                   </div>
@@ -80,25 +80,25 @@ function ItemRegister() {
                     />
                   </div>
                   <div className="row justify-content-center">
-                    <SelectCity Texto={"Ciudad"} Type={typ} clas={clas} id={idu} optional={ciudad}/>
+                    <SelectCity titulo={"Lugar"} Texto={"Ciudad"} Type={typ} id={idu} optional={ciudad}/>
                   </div>
-                  <div className="row justify-content-center">
+                  <section className="row justify-content-center">
                     <div className="col-10">
                       <div className="row">
                         <div className="col">
-                          <SelectNum titulo={"Baños"} clase={clas1} id={idu} optional={banios}/>
+                          <SelectNum titulo={"Baños"} clase={clas1} id={idu} optional={banios} Num={"Num Baños"}/>
                         </div>
                         <div className="col">
-                          <SelectNum titulo={"Cuartos"} clase={clas1} id={idu} optional={cuartos}/>
+                          <SelectNum titulo={"Cuartos"} clase={clas1} id={idu} optional={cuartos} Num={"Num Cuartos"}/>
                         </div>
                         <div className="col">
-                          <SelectNum titulo={"Pisos"} clase={clas1} id={idu} optional={pisos}/>
+                          <SelectNum titulo={"Pisos"} clase={clas1} id={idu} optional={pisos} Num={"Num Pisos"}/>
                         </div>
                       </div>
                     </div>
-                  </div>
-                </div>
-                <div className="col-6">
+                  </section>
+                </section>
+                <section className="col-6">
                   <div className="row justify-content-center">
                     <Inputs Texto={"Tamaño"} Type={typ} clas={clas} id={idu} xref={tamanio}/>
                   </div>
@@ -115,9 +115,13 @@ function ItemRegister() {
                       xref={description}
                     />
                   </div>
-                </div>
+                </section>
               </div>
-              <button onClick={handleOnClick}>aceptar</button>
+                <div className="row justify-content-center align-items-center mb ">
+                  <div className="col-5">
+                    <button type='button'className="btn btn-primary w100" onClick={handleOnClick}>aceptar</button>
+                  </div>
+                </div>
             </div>
           </div>
         </div>

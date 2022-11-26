@@ -22,14 +22,14 @@ function AgentPage(){
     return(
         <>
               <div className="row fondo-deg ">
-                <div className="container-fluid fondo-img-pano">
+                <section className="container-fluid fondo-img-pano">
                     <div className="row header nav-bar fixed-top">
                         <NavBar isAgent={3}/>
                     </div>
                     <div className="row align-items-center justify-content-center bie">
                         <RowBienvenida texto={"Vende, Compra o Renta con confianza y con seguridad"}/>
                     </div>
-                </div> 
+                </section> 
                 {
                     /*
                     <div className="row mt">
@@ -55,15 +55,15 @@ function AgentPage(){
                     */
                 }
                 
-                <div className="container-fluid mt">
+                <section className="container-fluid mt">
                     <div className="container">
                         <Pagination forAgent={true}/>
                     </div>
                     <ButtonAdd id={idAgent}/>
-                </div>
-                <div className="row fondo-footer mt">
+                </section>
+                <section className="row fondo-footer mt">
                     <Footer />
-                </div>
+                </section>
             </div>
             
         </>
