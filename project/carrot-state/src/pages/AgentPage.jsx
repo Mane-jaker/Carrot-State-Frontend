@@ -27,9 +27,26 @@ function AgentPage(){
                         <NavBar isAgent={3}/>
                     </div>
                     <div className="row align-items-center justify-content-center bie">
-                        <RowBienvenida texto={"Vende, Compra o Renta con confianza y con seguridad"}/>
+                        <RowBienvenida texto={"Bienvenido otra vez"}/>
                     </div>
-                </section> 
+                </section>
+                <section className="container">
+                    <div className="row justify-content-center">
+                        <div className="col-4">
+                            <h2 className='hsblack'>Lista de propiedades</h2>
+                        </div>
+                    </div>
+                </section>
+
+                <div className="row mt">
+                    <section className="container">
+                        <div className="row justify-content-center">
+                            <div className="col-4">
+                                <h2 className='hsblack'>Aqui va ir un select</h2>
+                            </div>
+                        </div>
+                    </section>
+                </div>
                 {
                     /*
                     <div className="row mt">
