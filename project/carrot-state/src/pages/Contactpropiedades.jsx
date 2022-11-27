@@ -3,6 +3,8 @@ import NavBar from '../components/NavBar'
 import RowBienvenida from '../components/RowBienvenida'
 import '../styles/style.css'
 import '../styles/stylespage/ClientsPage.css'
+import SelectPages from '../continuous/SelectPages'
+import Search from '../continuous/Search'
 
 function ContactPropiedades(){
     return(
@@ -13,8 +15,7 @@ function ContactPropiedades(){
                     <NavBar isAgent={4}/>
                 </div>
                 <div className="row align-items-center justify-content-center bie">
-                    <RowBienvenida texto={"Busca lo que necesitas"}/>
-                    {/* aqui va ir una barra de busqueda UwU*/}
+                    <RowBienvenida texto={"Busca lo que necesitas"} IsSearch={true}/>
                 </div>
             </section>              
             <div className="row mt">
@@ -30,7 +31,7 @@ function ContactPropiedades(){
                 <section  className="container">
                     <div className="row justify-content-center">
                         <div className="col-4">
-                            <h2 className='hsblack'>Aqui va ir un select tus intereses</h2>
+                            <SelectPages id={"Select"} />
                         </div>
                     </div>
                 </section>
