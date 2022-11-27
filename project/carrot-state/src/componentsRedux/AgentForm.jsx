@@ -2,6 +2,7 @@ import { useState } from 'react'
 import {useDispatch} from 'react-redux'
 import {addAgent} from '../features/agent/AgentSlice'
 import {v4 as uuid} from 'uuid'
+import {useNavigate} from 'react-router-dom'
 
 
 function AgentForm (){
@@ -11,7 +12,8 @@ function AgentForm (){
         description: ''
     })
 
-    const dispatch =useDispatch()
+    const dispatch = useDispatch()
+    const navigate = useNavigate()
 
     const handleChange = e => {
         setAgent({
@@ -26,6 +28,7 @@ function AgentForm (){
             ...agent,
             id: uuid(),
         }))
+        navigate('/carloxd')
     }
 
     return (

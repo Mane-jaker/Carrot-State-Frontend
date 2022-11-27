@@ -16,7 +16,10 @@ export const agentSlice = createSlice({
             state.push(action.payload)
         },
         deleteAgent:(state, action) =>{
-
+            const agentFound = state.find(agent => agent.id === action.payload)
+            if (agentFound){
+                state.splice(state.indexOf(agentFound), 1)
+            }
         }
     }
 })

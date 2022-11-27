@@ -1,6 +1,8 @@
 import React from 'react'
 import {useSelector, useDispatch} from 'react-redux'
 import {deleteAgent} from '../features/agent/AgentSlice'
+import { Link } from 'react-router-dom'
+
 
 function AgentList() {
 
@@ -9,7 +11,7 @@ function AgentList() {
     const dispatch = useDispatch()
 
     const handleDelete = (id) =>{
-      console.log(id)
+      dispatch(deleteAgent(id))
     }
 
   return (
@@ -20,6 +22,7 @@ function AgentList() {
                 <h3>{agent.title}</h3>
                 <p>{agent.description}</p>
                 <button onClick={() => handleDelete (agent.id)}>delete</button>
+                <Link to={`/carloxd/edit-agent`}>edit</Link>
             </div>
         )}
     </div>

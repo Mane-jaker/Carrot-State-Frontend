@@ -12,6 +12,8 @@ import PopupItem from './components/PopupItem'
 import ItemRegister from './pages/ItemRegister'
 import InmobiliariaPage from './pages/InmobiliariaPage'
 import Prueba from './componentsRedux/Prueba'
+import AgentForm from './componentsRedux/AgentForm'
+import AgentList from './componentsRedux/AgentList'
 
 
 function App() {
@@ -42,6 +44,7 @@ function App() {
             <Route path=':idAgent' element={<ItemRegister/>}></Route> 
             </Route>
             <Route path='/carloxd' element={<Prueba/>}/>
+            <Route path='/carlosxd/edit-agent/:id' element={<AgentList/>}/>
           </Routes>
         </BrowserRouter>
       </>
