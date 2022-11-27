@@ -14,7 +14,7 @@ function ClientsPage(){
                         <NavBar isAgent={4}/>
                     </div>
                     <div className="row align-items-center justify-content-center bie">
-                        <RowBienvenida text={"Vende, Compra o Renta con confianza y con seguridad"}/>
+                        <RowBienvenida texto={"Vende, Compra o Renta con confianza y con seguridad"}/>
                     </div>
                 </section>              
                 <div className="row mt">

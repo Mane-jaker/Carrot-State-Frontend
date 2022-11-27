@@ -1,29 +1,29 @@
 import React from 'react'
-import CardAgent from '../components/CardAgent' 
 import NavBar from '../components/NavBar'
 import RowBienvenida from '../components/RowBienvenida'
-import Pagination from '../components/Pagination'
 import Footer from '../components/Footer'
 
-function InmobiliariaPage() {
-  return (
-    <>
+function PropiedadesPage(){
+    return(
+        <>
         <div className="row fondo-deg">
             <section className="row fondo-img">
                 <div className="row header nav-bar fixed-top">
                     <NavBar isAgent={2}/>
                 </div>
                 <div className="row align-items-center justify-content-center bie">
-                    <RowBienvenida texto={"Bienvenido otra vez"}/>
+                    <RowBienvenida texto={"Propiedades"}/>
                 </div>
             </section>           
             <section className="row">
-                <div className="container">
-                    {/*text */}
-                </div>
+                <div className="row justify-content-center">
+                    <div className="col-4">
+                        <h2 className='hsblack'>Aqui va ir un select</h2>
+                    </div>
+               </div>
             </section>
             <section className="container">
-                <CardAgent/>
+                <h2>Aqui van a ir las cards de propiedades</h2>
             </section>
             <section className="row fondo-footer">
                 <Footer/>
@@ -31,7 +31,7 @@ function InmobiliariaPage() {
             </section>
         </div>    
     </>
-  )
+    )
 }
 
-export default InmobiliariaPage
+export default PropiedadesPage

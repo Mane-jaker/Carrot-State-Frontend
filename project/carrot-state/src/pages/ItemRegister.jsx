@@ -111,7 +111,7 @@ function ItemRegister() {
                       Type={typ}
                       clas={clas}
                       id={idu}
-                      row={"3"}
+                      row={"4"}
                       xref={description}
                     />
                   </div>

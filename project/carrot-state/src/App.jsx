@@ -12,8 +12,11 @@ import PopupItem from './components/PopupItem'
 import ItemRegister from './pages/ItemRegister'
 import InmobiliariaPage from './pages/InmobiliariaPage'
 import Prueba from './componentsRedux/Prueba'
-import AgentForm from './componentsRedux/AgentForm'
-import AgentList from './componentsRedux/AgentList'
+import ContactInmobiliari from './pages/ContactInmobiliari'
+import ContactPropiedades from './pages/Contactpropiedades'
+import ContactVender from './pages/ContactVender'
+import PropiedadesPage from './pages/PropiedadesPage'
+import AgentClientsPage from './pages/AgentClientsPage'
 
 
 function App() {
@@ -44,7 +47,11 @@ function App() {
             <Route path=':idAgent' element={<ItemRegister/>}></Route> 
             </Route>
             <Route path='/carloxd' element={<Prueba/>}/>
-            <Route path='/carlosxd/edit-agent/:id' element={<AgentList/>}/>
+            <Route path='/clients/inmobiliaria' element={<ContactInmobiliari/>}/>
+            <Route path='/clients/propiedades' element={<ContactPropiedades/>}/>
+            <Route path='/clients/vender' element={<ContactVender/>}/>
+            <Route path='/InmobiliPage/propiedades' element={<PropiedadesPage/>}/>
+            <Route path='/agentpage/client' element={<AgentClientsPage/>}/>
           </Routes>
         </BrowserRouter>
       </>
