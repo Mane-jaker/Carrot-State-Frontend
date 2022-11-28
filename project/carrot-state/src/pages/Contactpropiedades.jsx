@@ -5,6 +5,8 @@ import { InmobilUserCard } from '../components/InmobilUserCard'
 import { InmobilUserCardInter } from '../components/InmobilUserCard'
 import '../styles/style.css'
 import '../styles/stylespage/ClientsPage.css'
+import SelectPages from '../continuous/SelectPages'
+import Search from '../continuous/Search'
 
 function ContactPropiedades(){
     return(
@@ -15,8 +17,7 @@ function ContactPropiedades(){
                     <NavBar isAgent={4}/>
                 </div>
                 <div className="row align-items-center justify-content-center bie">
-                    <RowBienvenida texto={"Busca lo que necesitas"}/>
-                    {/* aqui va ir una barra de busqueda UwU*/}
+                    <RowBienvenida texto={"Busca lo que necesitas"} IsSearch={true}/>
                 </div>
             </section>   
             <div className='row mt'>change-btn</div>           
@@ -33,12 +34,7 @@ function ContactPropiedades(){
                 <section  className="container">
                     <div className="row justify-content-center">
                         <div className="col-4">
-                            <select className='form-select' aria-label="Default select example">
-                                <option defaultValue>Elegir vista</option>
-                                <option value="1">Casas</option>
-                                <option value="2">Terrenos</option>
-                                <option value="3">Locales</option>
-                            </select>
+                            <SelectPages id={"Select"} />
                         </div>
                     </div>
                 </section>

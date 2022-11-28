@@ -4,6 +4,7 @@ import RowBienvenida from '../components/RowBienvenida'
 import RowLocation from '../components/RowLocation'
 import '../styles/style.css'
 import '../styles/stylespage/ClientsPage.css'
+import SelectPages from '../continuous/SelectPages'
 
 function ClientsPage(){
     return(
@@ -25,6 +26,15 @@ function ClientsPage(){
                             </div>
                         </div>
                     </section>
+                    <div className="row mt">
+                        <section className="container">
+                            <div className="row justify-content-center">
+                                <div className="col-4">
+                                    <SelectPages id={"Select"} />
+                                </div>
+                            </div>
+                        </section>
+                    </div>
                 </div>
                 <div className="container-fluid mt">
                     <div className="container">

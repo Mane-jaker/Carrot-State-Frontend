@@ -2,6 +2,7 @@ import React from 'react'
 import NavBar from '../components/NavBar'
 import RowBienvenida from '../components/RowBienvenida'
 import Footer from '../components/Footer'
+import SelectPages from '../continuous/SelectPages'
 
 function PropiedadesPage(){
     return(
@@ -17,12 +18,12 @@ function PropiedadesPage(){
             </section>           
             <section className="row">
                 <div className="row justify-content-center">
-                    <div className="col-4">
-                        <h2 className='hsblack'>Aqui va ir un select</h2>
+                    <div className="col-4 mt">
+                        <SelectPages id={"Select"} />
                     </div>
                </div>
             </section>
-            <section className="container">
+            <section className="container mt">
                 <h2>Aqui van a ir las cards de propiedades</h2>
             </section>
             <section className="row fondo-footer">
