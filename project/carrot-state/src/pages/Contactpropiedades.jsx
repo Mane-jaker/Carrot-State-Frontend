@@ -1,6 +1,8 @@
 import Footer from '../components/Footer'
 import NavBar from '../components/NavBar'
 import RowBienvenida from '../components/RowBienvenida'
+import { InmobilUserCard } from '../components/InmobilUserCard'
+import { InmobilUserCardInter } from '../components/InmobilUserCard'
 import '../styles/style.css'
 import '../styles/stylespage/ClientsPage.css'
 
@@ -16,7 +18,8 @@ function ContactPropiedades(){
                     <RowBienvenida texto={"Busca lo que necesitas"}/>
                     {/* aqui va ir una barra de busqueda UwU*/}
                 </div>
-            </section>              
+            </section>   
+            <div className='row mt'>change-btn</div>           
             <div className="row mt">
                 <section className="container">
                     <div className="row justify-content-center">
@@ -26,20 +29,28 @@ function ContactPropiedades(){
                     </div>
                 </section>
             </div>
-            <div className="row mt">
+            <section className="row mt">
                 <section  className="container">
                     <div className="row justify-content-center">
                         <div className="col-4">
-                            <h2 className='hsblack'>Aqui va ir un select tus intereses</h2>
+                            <select className='form-select' aria-label="Default select example">
+                                <option defaultValue>Elegir vista</option>
+                                <option value="1">Casas</option>
+                                <option value="2">Terrenos</option>
+                                <option value="3">Locales</option>
+                            </select>
                         </div>
                     </div>
                 </section>
-            </div>
-            <div className="container-fluid mt">
-                <div className="container">
-                    <h2>Aqui va ir Cards de casas </h2>
+            </section>
+            <section className="container-fluid mt">
+                <div className="container">{/*segun el boton de change-btn cambian estas dos madres :v */}
+                    <InmobilUserCardInter/>
                 </div>
-            </div>
+                <div className='container disp'>
+                    <InmobilUserCard/>
+                </div>
+            </section>
             <section className="row fondo-footer mt">
                 <Footer />
             </section>
