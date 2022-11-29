@@ -17,6 +17,7 @@ import ContactPropiedades from './pages/Contactpropiedades'
 import ContactVender from './pages/ContactVender'
 import PropiedadesPage from './pages/PropiedadesPage'
 import AgentClientsPage from './pages/AgentClientsPage'
+import AgentForm from './componentsRedux/AgentForm'
 
 
 function App() {
@@ -47,6 +48,7 @@ function App() {
             <Route path=':idAgent' element={<ItemRegister/>}></Route> 
             </Route>
             <Route path='/carloxd' element={<Prueba/>}/>
+            <Route path='/carloxd/edit-agent/:id' element={<AgentForm/>}/>
             <Route path='/clients/inmobiliaria' element={<ContactInmobiliari/>}/>
             <Route path='/clients/propiedades' element={<ContactPropiedades/>}/>
             <Route path='/clients/vender' element={<ContactVender/>}/>

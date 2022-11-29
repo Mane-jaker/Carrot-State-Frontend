@@ -1,8 +1,8 @@
-import { useState } from 'react'
-import {useDispatch} from 'react-redux'
-import {addAgent} from '../features/agent/AgentSlice'
+import { useState, useEffect } from 'react'
+import {useDispatch, useSelector} from 'react-redux'
+import {addAgent, updateAgent} from '../features/agent/AgentSlice'
 import {v4 as uuid} from 'uuid'
-import {useNavigate} from 'react-router-dom'
+import {useNavigate, useParams} from 'react-router-dom'
 
 
 function AgentForm (){
@@ -14,6 +14,9 @@ function AgentForm (){
 
     const dispatch = useDispatch()
     const navigate = useNavigate()
+    const params = useParams()
+    const agents = useSelector(state => state.agents)
+
 
     const handleChange = e => {
         setAgent({
@@ -24,18 +27,29 @@ function AgentForm (){
 
     const handleSubmit =(e) =>{
         e.preventDefault();
-        dispatch(addAgent({
+
+        if(params.id){
+            dispatch(updateAgent(agent))
+        }else{
+            dispatch(addAgent({
             ...agent,
             id: uuid(),
         }))
+        }
         navigate('/carloxd')
     }
 
+    useEffect(() => {
+        if (params.id){
+            setAgent(agents.find((agent) => agent.id === params.id))
+        }
+    },[])
+
     return (
         <form onSubmit={handleSubmit}>
-            <input name='title' type="text" placeholder='title' onChange={handleChange} />
+            <input name='title' type="text" placeholder='title' onChange={handleChange} value={agent.title} />
 
-            <textarea name="description" placeholder='description' onChange={handleChange}></textarea>
+            <textarea name="description" placeholder='description' onChange={handleChange} value={agent.description}></textarea>
 
             <button>save</button>
         </form>

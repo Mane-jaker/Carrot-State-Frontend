@@ -20,9 +20,18 @@ export const agentSlice = createSlice({
             if (agentFound){
                 state.splice(state.indexOf(agentFound), 1)
             }
+        },
+        updateAgent:(state, action) =>{
+            const {id, title, description}= action.payload
+            const foundAgent = state.find(agent => agent.id === id)
+
+            if(foundAgent){
+                foundAgent.title = title
+                foundAgent.description = description
+            }
         }
     }
 })
 
-export const {addAgent, deleteAgent} = agentSlice.actions
+export const {addAgent, deleteAgent, updateAgent} = agentSlice.actions
 export default agentSlice.reducer

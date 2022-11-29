@@ -22,7 +22,7 @@ function AgentList() {
                 <h3>{agent.title}</h3>
                 <p>{agent.description}</p>
                 <button onClick={() => handleDelete (agent.id)}>delete</button>
-                <Link to={`/carloxd/edit-agent`}>edit</Link>
+                <Link to={`/carloxd/edit-agent/${agent.id}`}>edit</Link>
             </div>
         )}
     </div>
