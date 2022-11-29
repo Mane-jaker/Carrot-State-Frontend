@@ -4,6 +4,7 @@ import RowBienvenida from '../components/RowBienvenida'
 import RowLocation from '../components/RowLocation'
 import '../styles/style.css'
 import '../styles/stylespage/ClientsPage.css'
+import SelectPages from '../continuous/SelectPages'
 
 function ClientsPage(){
     return(
@@ -14,7 +15,7 @@ function ClientsPage(){
                         <NavBar isAgent={4}/>
                     </div>
                     <div className="row align-items-center justify-content-center bie">
-                        <RowBienvenida text={"Vende, Compra o Renta con confianza y con seguridad"}/>
+                        <RowBienvenida texto={"Vende, Compra o Renta con confianza y con seguridad"}/>
                     </div>
                 </section>              
                 <div className="row mt">
@@ -25,6 +26,15 @@ function ClientsPage(){
                             </div>
                         </div>
                     </section>
+                    <div className="row mt">
+                        <section className="container">
+                            <div className="row justify-content-center">
+                                <div className="col-4">
+                                    <SelectPages id={"Select"} />
+                                </div>
+                            </div>
+                        </section>
+                    </div>
                 </div>
                 <div className="container-fluid mt">
                     <div className="container">

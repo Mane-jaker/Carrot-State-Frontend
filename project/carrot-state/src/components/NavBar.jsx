@@ -29,7 +29,27 @@ function NavBar({isAgent}) {
                        <img src={logo} alt="ola" className='img-fluid' />
                     </div>
                     <div className="col-3">
-                    <Link to={"/"} className='hs'><h1>Carroth State</h1></Link>
+                    {isAgent == 1 && (
+                        <>
+                            <Link to={"/"} className='hs'><h1>Carroth State</h1></Link>
+                        </>
+                    )}
+                    {isAgent == 2 && (
+                        <>
+                            <Link to={"/InmobiliPage"} className='hs'><h1>Carroth State</h1></Link>
+                        </>
+                    )}
+                    {isAgent == 3 && (
+                        <>
+                            <Link to={"/agentPage/1"} className='hs'><h1>Carroth State</h1></Link>
+                        </>
+                    )}
+                    {isAgent == 4 && (
+                        <>
+                            <Link to={"/clients"} className='hs'><h1>Carroth State</h1></Link>
+                        </>
+                    )}
+
                     </div>  
                     <div className="col-4 offset-4">
                         <div className="row align-items-center">
@@ -46,10 +66,10 @@ function NavBar({isAgent}) {
                             {isAgent == 2 && (
                                 <>
                                     <div className="col-4">
-                                        <a href="#" className="navp">Agentes</a>
+                                        <Link to={"/InmobiliPage"} className='navp'>Agentes</Link>
                                     </div>
                                     <div className="col-4">
-                                        <a href="#" className="navp">Propiedades</a>
+                                        <Link to={"/InmobiliPage/propiedades"} className='navp'>Propiedades</Link>
                                     </div>
                                     <div className="col-2">
                                         <div>
@@ -61,10 +81,10 @@ function NavBar({isAgent}) {
                             {isAgent == 3 && (
                                 <>
                                     <div className="col-4">
-                                        <a href="#" className="navp">Propiedades</a>
+                                        <Link to={"/agentPage/1"} className='navp'>Propiedades</Link>
                                     </div>
                                     <div className="col-4">
-                                        <a href="#" className="navp">Clientes</a>
+                                        <Link to={"/agentpage/client"} className='navp'>Clientes</Link>
                                     </div>
                                     <div className="col-2">
                                         <div>
@@ -76,13 +96,13 @@ function NavBar({isAgent}) {
                             {isAgent == 4 && (
                                 <>
                                     <div className="col-4">
-                                        <a href="#" className="navp">Inmobiliarias</a>
+                                        <Link to={"/clients/inmobiliaria"} className='navp'>Inmobiliaria</Link>
                                     </div>
                                     <div className="col-4">
-                                        <a href="#" className="navp">Propiedades</a>
+                                        <Link to={"/clients/propiedades"} className='navp'>Propiedades</Link>
                                     </div>
                                     <div className="col-2">
-                                        <a href="#" className="navp">Vender</a>
+                                        <Link to={"/clients/vender"} className='navp'>Vender</Link>
                                     </div>
                                     <div className="col-2">
                                         <div>
