@@ -4,8 +4,18 @@ import RowBienvenida from '../components/RowBienvenida'
 import BodoqueCard from '../components/BodoqueCard'
 import '../styles/style.css'
 import '../styles/stylespage/ClientsPage.css'
+import { useEffect, useState } from 'react'
 
-function ContactInmobiliari(){
+function AdminPage(){
+
+    const [data, setData] = useState([{}]);
+
+    useEffect(function() {
+        fetch("http://localhost:8080/real_state")
+        .then((response) => {return response.json()})
+        .then((response) => {setData(response.data)})
+      },[]);
+
     return(
         <>
         <div className="row fondo-deg">
@@ -22,15 +32,27 @@ function ContactInmobiliari(){
                     <div className="row justify-content-center">
                         <div className="col-4">
                             <h2 className='hsblack'>Lista de agencias</h2>
+                            
                         </div>
                     </div>
                 </section>
             </div>
-            <section className="row mt">
-                <section className="container">
-                    <BodoqueCard/>
-                </section>
-            </section>
+            
+                
+                {
+                    data && data.map(realStates => ( 
+                        <section className="row">
+                            <div className="col-4">
+                                <BodoqueCard 
+                                name={realStates.name} 
+                                isActivated={realStates.status}
+                                id={realStates.id}></BodoqueCard>
+                            </div>                         
+                        </section>
+                    ))
+                }
+                
+           
             <section className="row fondo-footer mt">
                 <Footer />
             </section>
@@ -39,4 +61,4 @@ function ContactInmobiliari(){
     )
 }
 
-export default ContactInmobiliari
+export default AdminPage

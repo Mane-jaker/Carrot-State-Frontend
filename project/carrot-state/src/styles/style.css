@@ -184,3 +184,11 @@ p{
 .containerpop{
     width: 100%;
 }*/
+.quesossos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.owo{
+    width: 80%;
+}

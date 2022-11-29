@@ -12,7 +12,7 @@ import PopupItem from './components/PopupItem'
 import ItemRegister from './pages/ItemRegister'
 import InmobiliariaPage from './pages/InmobiliariaPage'
 import Prueba from './componentsRedux/Prueba'
-import ContactInmobiliari from './pages/ContactInmobiliari'
+import AdminPage from './pages/AdminPage'
 import ContactPropiedades from './pages/Contactpropiedades'
 import ContactVender from './pages/ContactVender'
 import PropiedadesPage from './pages/PropiedadesPage'
@@ -37,6 +37,10 @@ function App() {
             <Route path='/agentPage'>
               <Route path=':idAgent' element={<AgentPage/>} />    
             </Route>
+            <Route path='/InmobiliPage' element={<InmobiliariaPage/>}>
+            <Route path=':idAgent' element={<ItemRegister/>}></Route> 
+            </Route>
+            <Route path='/admin' element={<AdminPage />} />
             <Route path='/item' element={<ItemPage/>}/>
             <Route path='/clients' element={<ClientsPage/>}/>
             <Route path='/uploadImg' element={<UploadImg/>}/>
@@ -44,12 +48,8 @@ function App() {
             <Route path='/registItem'>
               <Route path=':idAgent' element={<ItemRegister/>}></Route> 
             </Route>
-            <Route path='/InmobiliPage' element={<InmobiliariaPage/>}>
-            <Route path=':idAgent' element={<ItemRegister/>}></Route> 
-            </Route>
             <Route path='/carloxd' element={<Prueba/>}/>
             <Route path='/carloxd/edit-agent/:id' element={<AgentForm/>}/>
-            <Route path='/clients/inmobiliaria' element={<ContactInmobiliari/>}/>
             <Route path='/clients/propiedades' element={<ContactPropiedades/>}/>
             <Route path='/clients/vender' element={<ContactVender/>}/>
             <Route path='/InmobiliPage/propiedades' element={<PropiedadesPage/>}/>

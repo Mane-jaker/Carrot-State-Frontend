@@ -34,23 +34,25 @@ function Home(){
                                 <h5 class="modal-title">Que sos?</h5>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </section>
-                            <section class="modal-body">
-                                <div className='row quesosbtns'>
-                                    <div  className="col-4">
-                                        <button className="btn btn-primary" id="clientebtn" data-bs-dismiss="modal" aria-label="Close">
-                                            <Link to={"/login/client"}>Cliente</Link>
-                                        </button>
-                                    </div>
-                                    <div className="col-4">
-                                        <button className="btn btn-primary" id="agenteebtn" data-bs-dismiss="modal" aria-label="Close">
-                                            <Link to={"/login/agent"}>Agente</Link>
-                                        </button>
-                                        
-                                    </div>
-                                    <div className="col-4">
-                                        <button className="btn btn-primary" id="inmobiliariaebtn" data-bs-dismiss="modal" aria-label="Close">
-                                            <Link to={"/login/real-state"}>Inmobiliaria</Link>
-                                        </button>
+                            <section class="modal-body align-items-center justify-content-center">
+                                <div className='row align-items-center justify-content-center'>
+                                    <div className='row align-items-center justify-content-center'>
+                                        <div  className="col-3 ">
+                                            <button className="btn btn-primary" id="clientebtn" data-bs-dismiss="modal" aria-label="Close">
+                                                <Link to={"/login/client"}>Cliente</Link>
+                                            </button>
+                                        </div>
+                                        <div className="col-3">
+                                            <button className="btn btn-primary" id="agenteebtn" data-bs-dismiss="modal" aria-label="Close">
+                                                <Link to={"/login/agent"}>Agente</Link>
+                                            </button>
+                                            
+                                        </div>
+                                        <div className="col-3">
+                                            <button className="btn btn-primary" id="inmobiliariaebtn" data-bs-dismiss="modal" aria-label="Close">
+                                                <Link to={"/login/real-state"}>Inmobiliaria</Link>
+                                            </button>
+                                        </div>
                                     </div>
                                 </div>
                             </section>

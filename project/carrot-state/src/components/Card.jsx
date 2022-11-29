@@ -20,8 +20,8 @@ function Card({imj,title,desc,price}) {
                 <div className="mt">
                     <p class="card-text">{price}</p>
                 </div>
-                <div className="mt">
-                    <Button Texto="See more" typ={typ} clas={clas}/>
+                <div className="mt row">
+                    <div className="col-11"><Button Texto="See more" typ={typ} clas={clas}/></div>
                 </div>
             </section>
         </section>

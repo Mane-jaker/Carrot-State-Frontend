@@ -4,6 +4,9 @@ import { Navigate, useNavigate, useParams } from "react-router-dom"
 import Inputs from "../continuous/Inputs"
 import '../styles/style.css'
 import '../styles/stylespage/Login.css'
+import swal from 'sweetalert';
+import {addAgent} from '../features/agent/AgentSlice'
+import {useDispatch} from 'react-redux'
 
 function Login(){
 
@@ -17,16 +20,43 @@ function Login(){
 
     const email = useRef();
     const password = useRef();
+    const dispatch = useDispatch()
     
     const handleOnClick = () => {
         setCredentials({email: email.current.value, password: password.current.value})
     }
 
+    const [agentId, setAgent] = useState({
+        id:""
+    })
+
     const handleAgentLogin = (response) =>{
-        if(response.data.success){
-            navigate("/agentPage/" + response.data.logged.id);
+        if(response.success){
+            if(response.data.success){
+                setAgent({id: response.data.logged.id})
+                dispatch(addAgent({...agentId}))
+                swal('Error',response.message,'error')
+            }
+            
         }
-        alert(response.message)
+    }
+
+
+    const handleRealStateLogin = (response) =>{
+        
+            if(response.data.success){
+                setRealstate({id:response.data.logged.id}) 
+                dispatch(addRE)
+        
+            }
+        
+    }
+    
+    const handleClientLogin = (response) =>{
+        if(response.data.success){
+            let realStateId = response.data.logged.id;
+            
+        }
     }
 
     useEffect(() =>{
@@ -42,25 +72,56 @@ function Login(){
                         },
                         redirect: 'follow',
                         body: JSON.stringify(credentials)
-                    }).then((response) => {return response.json()})
+                    })
+                    .then((response) => {return response.json()})
                     .then((response) => { 
+                        //handleChange();
                         handleAgentLogin(response);
                     })
                     break;
                 }
                 case "real-state":{
-                    fetch("", {
+                    fetch("http://localhost:8080/login/real_state", {
                         method: 'POST',
-                        headers: {"content-type": "application/json"},
-                        body: credentials
+                        headers: {
+                            "Accept": "application/json",
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify(credentials)
+                    })
+                    .then((response) => {return response.json()})
+                    .then((response) => {
+                        handleRealStateLogin(response);
                     })
                     break;
                 }
                 case "client":{
                     fetch("", {
                         method: 'POST',
-                        headers: {"content-type": "application/json"},
-                        body: credentials
+                        headers: {
+                            "Accept": "application/json",
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify(credentials)
+                    })
+                    .then((response) => {return response.json()})
+                    .then((response) => {
+                        handleClientLogin(response);
+                    })
+                    break;
+                }
+                case "admin": {
+                    fetch("", {
+                        method: 'POST',
+                        headers: {
+                            "Accept": "application/json",
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify(credentials)
+                    })
+                    .then((response) => {return response.json()})
+                    .then((response) => {
+                        handleClientLogin(response);
                     })
                     break;
                 }

@@ -2,10 +2,7 @@ import {createSlice} from "@reduxjs/toolkit"
 
 
 const initialState= [{
-    id: "1",
-    title: "puto",
-    description: "el puto mas puto asies",
-    status: false
+    id: "",
 }]
 
 export const agentSlice = createSlice({
