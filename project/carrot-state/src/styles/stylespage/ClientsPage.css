@@ -53,3 +53,21 @@
     font-weight: 900;
 }
 /*Card del inmobil*/
+/*Card del Bodoque*/
+.bodoques{
+    display: flex;
+}
+.cntr{
+    justify-content: center;
+}
+.bodoquefoto{
+    border-radius:0.25rem 0.25rem 0rem 0rem;
+}
+.infobodoque{
+    background-color: white;
+    border-radius: 0rem 0rem 0.25rem 0.25rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+/*Card del bodoque*/
