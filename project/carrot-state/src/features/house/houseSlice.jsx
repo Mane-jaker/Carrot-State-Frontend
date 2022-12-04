@@ -1,36 +1,37 @@
-import { createSlice } from "@reduxjs/toolkit";
+import {createSlice} from "@reduxjs/toolkit"
 
-const initialState = {
-    id: 0,
-    name: "",
-    location: "",
-    cityState: "",
+
+const initialState= [{
+    id: "1",
+    title: "",
     description: "",
-    bathroom: 0,
-    room: 0,
-    floor: 0,
-    size: 0,
-    price: 0
-};
+    status: false
+}]
 
 export const houseSlice = createSlice({
-    name: 'houses',
-    initialState: {},
-    reducers: {
-        addHouse: (state, action) => {
+    name: "houses",
+    initialState,
+    reducers:{
+        addHouse:(state, action) =>{
             state.push(action.payload)
         },
-        updateHouse:(state, action) =>{
-            state.put(action.payload)
-        },
         deleteHouse:(state, action) =>{
-            state.delete(action.payload)
+            const houseFound = state.find(house => house.id === action.payload)
+            if (houseFound){
+                state.splice(state.indexOf(houseFound), 1)
+            }
+        },
+        updateHouse:(state, action) =>{
+            const {id, title, description}= action.payload
+            const houseAgent = state.find(house => house.id === id)
+
+            if(houseAgent){
+                foundHouse.title = title
+                foundHouse.description = description
+            }
         }
     }
-});
+})
 
-export const {addHouse} = houseSlice.actions;
-export const {updateHouse} =houseSlice.actions;
-export const {deleteHouse} = houseSlice.actions; 
-
-export default houseSlice.reducer;
+export const {addHouse, deleteHouse, updateHouse} = houseSlice.actions
+export default houseSlice.reducer
