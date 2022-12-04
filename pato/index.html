@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        
+        <link rel="stylesheet" href="./atom.css">
+        <link rel="stylesheet" href="./molecule.css">
+        <link rel="stylesheet" href="./organism.css">
+        <link rel="stylesheet" href="./index.css">
+
+    </head>
+
+    <body>
+            <div class="sideBar" id="sidebar"><!-- principal bar -->
+                <div class="profileImg">
+                    <img id="me" src="https://pbs.twimg.com/profile_images/490590018943983616/1QtYly1m.png" alt="">
+                </div>
+                <div class="btns property">
+                    <button class="btn houses" id="houses">Houses</button>
+                    <button class="btn plots" id="plots">Plots</button>
+                    <button class="btn premis" id="premis">Premises</button>
+                </div>
+                <div class="btns control">
+                    <button class="btn close" id="close">X</button>
+                    <button class="btn prosp change" id="prosp">-></button>
+                </div>
+            </div>
+            <div class="prospectiveBuyers" id="prosbuys"><!-- hidden bar -->
+                <div class="btns propertytwo">
+                    <button class="btn two prosB"    id="prosB">Prospective Buyers</button>
+                    <button class="btn two client"   id="client">Client</button>
+                    <button class="btn two sales"    id="sales">Sales</button>
+                    <button class="btn two settings" id="settings">Settings</button>
+                </div>
+            </div>
+            <!-- 
+                <div class="searchh" id="searchh"> <-- top bar first option just buttons ->
+                <div class="topbar" id="topbar">
+                    <h1 class="changeable" id="changeabl">HOUSES</h1>
+                    <h1 class="changeable" id="changeable">PLOTS</h1>
+                    <h1 class="changeable" id="changeables">PREMISES</h1>
+                    <button class="btn prosp" id="addbtn">ADD</button>
+                </div>
+            </div>
+             -->
+             <!--  
+            <div class="searchh" id="searchh"> <-- top bar second option just buttons ->
+                <div class="topbar" id="topbar">
+                    <h1 class="changeable" id="changeabl">HOUSES</h1>
+                    <h1 class="changeable" id="changeable">PLOTS</h1>
+                    <h1 class="changeable" id="changeables">PREMISES</h1>
+                    <button class="btn prosp" id="addbtn">ADD</button>
+                </div>
+            </div>
+        -->
+            <div class="searchh" id="searchh"> <!-- top bar tird option complete-->
+                <div class="topbar" id="topbar">
+                    <button class="changeable btn disp" id="changeabl">HOUSES</button>
+                    <button class="changeable btn disp" id="changeable">PLOTS</button>
+                    <button class="changeable btn disp" id="changeables">PREMISES</button>
+                    <button class="btn addbtn" id="addbtn">ADD</button>
+                </div>
+                <div class="topbar move" id="searching" >
+                    <input class="input sInput" id="a" type="search" placeholder="Search...">
+                    <input class="input sInput disp" id="h" type="search" placeholder="Search Houses...">
+                    <input class="input sInput disp" id="p" type="search" placeholder="Search Plots...">
+                    <input class="input sInput disp" id="s" type="search" placeholder="Search Premises...">
+                    <button class="btn" id="goBtn" >Search</button>
+                </div>
+            </div>
+            <div class="contents" id="contents">
+                <div class="noContent" id="aCnt">
+                    <h1 class="notContent">No Content</h1>
+                </div>
+                <div class="houseContent disp" id="hCnt">
+                    <h1>Houses</h1>
+                </div>
+                <div class="plotContent disp" id="pCnt">
+                    <h1>Plots</h1>
+                </div>
+                <div class="premiseContent disp" id="sCnt">
+                    <h1>Premises</h1>
+                </div>
+            </div>
+    <script src="index.js" charset="utf-8"></script>
+    </body>
+</html>

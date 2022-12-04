@@ -7,7 +7,7 @@ function Footer (){
     return(
         <section className="row align-items-center">
             <div className="col-4">
-                <section className="row align-items-center bor ">
+                <section className="row align-items-center">
                     <div className="col-3">
                         <img src={facebook} alt="ola" className="img-fluid" />
                     </div>

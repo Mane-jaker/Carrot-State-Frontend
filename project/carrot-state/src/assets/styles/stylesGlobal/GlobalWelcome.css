@@ -1,0 +1,12 @@
+.FondoImgPano{
+    background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.6)
+    ,rgba(0, 0, 0, 0.6)),
+    url(/src/assets/Img/panoramica.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: contain;
+    justify-content: center;
+    height: 50vh;
+}
+

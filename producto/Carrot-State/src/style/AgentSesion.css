@@ -1,0 +1,112 @@
+.seba{
+    background-color: #DCE0E6;
+    height: 100vh;
+}
+
+.cal{
+    background-color: #567EBB;
+}
+
+.button-state{
+    width: 80%;
+    margin-left: 10%;
+}
+
+.img-porfile{
+    height: 30vh;
+    overflow: hidden;
+    clip-path: circle(45% at 50% 50%);
+    width: 70%;
+    margin-left: 10%;
+}
+
+.space{
+    width: 30%;
+    height: 10vh;
+    display: flex;
+    justify-content: end;
+}
+
+.button-menu{
+    display: flex;
+    background-color: #87B091;
+    clip-path: circle(50% at 50% 50%);
+    width: 70%;
+}
+
+.add{
+ width: 100%;
+}
+
+.textb{
+    background-color: #171430;
+    width: 80%;
+    color: aliceblue;
+}
+
+.simbolb{
+    background-color: aliceblue;
+    width: 20%;
+}
+
+.searchs{
+    background-color: #171430;
+    color: aliceblue;
+}
+
+
+
+.fillcard{
+    background-color: #D9D9D9;
+    border-radius: 15px;
+}
+
+.boxc{
+    height: 65vh;
+    overflow-y: scroll;
+    background-color: #42608e;
+    border-radius: 10px;
+}
+
+.boxc::-webkit-scrollbar {
+    width: 12px;  
+    border-radius: 20px;        /* width of the entire scrollbar */
+}
+  
+.boxc::-webkit-scrollbar-track {
+    background: #42608e;        /* color of the tracking area */
+}
+  
+.boxc::-webkit-scrollbar-thumb {
+    background-color: #DCE0E6;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid #42608e;
+}
+
+.texti{
+    font-family: 'Lato', sans-serif;
+}
+
+.justcen{
+    justify-content: center;
+}
+
+.mt{
+    margin-top: 10%;
+}
+
+.mt1{
+    margin-top: 5%;
+}
+
+.mt2{
+    margin-top: 20%;
+}
+
+.mt3{
+    margin-top: 2%;
+}
+
+.mbo{
+    margin-bottom: 5%;
+}

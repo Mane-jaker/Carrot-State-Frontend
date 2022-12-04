@@ -1,0 +1,162 @@
+.seba{
+    background-color: #DCE0E6;
+    height: 100vh;
+}
+
+.cal{
+    background-color: #567EBB;
+}
+
+.button-state{
+    width: 80%;
+    margin-left: 10%;
+}
+
+.img-porfile{
+    height: 30vh;
+    overflow: hidden;
+    clip-path: circle(45% at 50% 50%);
+    width: 70%;
+    margin-left: 10%;
+}
+
+.space{
+    width: 30%;
+    height: 10vh;
+    display: flex;
+    justify-content: end;
+}
+
+.button-menu{
+    display: flex;
+    background-color: #87B091;
+    clip-path: circle(50% at 50% 50%);
+    width: 70%;
+}
+
+.add{
+ width: 100%;
+}
+
+.textb{
+    background-color: #171430;
+    width: 80%;
+    color: aliceblue;
+}
+
+.simbolb{
+    background-color: aliceblue;
+    width: 15vh;
+}
+
+.searchs{
+    background-color: #171430;
+    color: aliceblue;
+}
+
+
+
+.fillcard{
+    background-color: #D9D9D9;
+    border-radius: 15px;
+}
+
+.boxc{
+    height: 65vh;
+    overflow-y: scroll;
+    background-color: #42608e;
+    border-radius: 10px;
+}
+
+.boxc::-webkit-scrollbar {
+    width: 12px;  
+    border-radius: 20px;        /* width of the entire scrollbar */
+}
+  
+.boxc::-webkit-scrollbar-track {
+    background: #42608e;        /* color of the tracking area */
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+}
+  
+.boxc::-webkit-scrollbar-thumb {
+    background-color: #DCE0E6;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid #42608e;
+}
+
+.exdesc{
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    height: 120px;
+    word-wrap: break-word;
+    overflow-y: scroll;
+}
+
+.texti{
+   font-family: 'Courier New', Courier, monospace;
+}
+
+.justcen{
+    justify-content: center; 
+}
+
+.mt{
+    margin-top: 10%;
+}
+
+.mt1{
+    margin-top: 5%;
+}
+
+.mt2{
+    margin-top: 20%;
+}
+
+.mt3{
+    margin-top: 2%;
+}
+
+.mbo{
+    margin-bottom: 5%;
+}
+.closebtn{
+    display: flex;
+    background-color: crimson;
+    color: #DCE0E6;
+    border: 2px solid black;
+    height: 50px;
+    width: 50px;
+    font-size: large;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.forclosing{
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: #606D80;
+}
+.cardtittle{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #EFF0D5;
+    border-radius: 1rem;
+}
+.tittlesforcards{
+    font-size: xx-large;
+    margin-left: 20px;
+    margin-top: 2%;
+}
+.editCardBtn{
+    background-color: #2B4C7E;
+    color: azure;
+    font-size: large;
+    border: 2px solid black 1rem;
+} 
+.dispn{
+    display: none;
+}

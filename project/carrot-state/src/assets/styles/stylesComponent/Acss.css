@@ -1,0 +1,35 @@
+.row{border: 1px solid fuchsia;}
+.col{background-color: antiquewhite;}
+.col-1{background-color: aqua;}
+.col-2{background-color: aquamarine;}
+.col-3{background-color: beige;}
+.col-4{background-color: blue;}
+.col-5{background-color: blueviolet;}
+.col-6{background-color: brown;}
+.col-7{background-color: burlywood;}
+.col-8{background-color: cadetblue;}
+.col-9{background-color: chartreuse;}
+.col-10{background-color: chocolate;}
+.col-11{background-color: cornflowerblue;}
+.col-12{background-color: black;}
+
+
+#navhome{
+    padding-left: 5%;
+    padding-right: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    width: 100vw;
+}
+#titulo{
+    size: 120%;
+}
+#btnshome{
+    display: flex;
+    justify-content: space-between;
+}
+#contenthome{
+    display: flex;
+}

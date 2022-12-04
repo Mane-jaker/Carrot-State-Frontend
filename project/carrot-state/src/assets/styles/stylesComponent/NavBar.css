@@ -1,0 +1,35 @@
+*{
+    background: rgba(255, 255, 255, 1);
+    color: black;
+    font-size: 3rem;/*+-*/
+}
+.top-nav{
+    background: rgba(255, 255, 255, 1);
+    color: black;
+    font-size: 3rem;/*+-*/
+}
+.carrot{    background: rgba(255, 255, 255, 1);
+    color: black;
+    font-size: 3rem;/*+-*/
+    background: rgba(255, 255, 255, 1);
+    color: black;
+    font-size: 3rem;/*+-*/
+}
+.inmobiliarias{
+    background: rgba(255, 255, 255, 1);
+    color: black;
+    font-size: 3rem;/*+-*/
+}
+.propiedades{
+    background: rgba(255, 255, 255, 1);
+    color: black;
+    font-size: 3rem;/*+-*/
+}
+.vender{
+    background: rgba(255, 255, 255, 1);
+    color: black;
+    font-size: 3rem;/*+-*/
+}
+img{
+    border-radius: 50%;
+}
