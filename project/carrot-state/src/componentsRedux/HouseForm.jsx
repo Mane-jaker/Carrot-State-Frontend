@@ -1,13 +1,13 @@
 import { useState, useEffect } from 'react'
 import {useDispatch, useSelector} from 'react-redux'
-import {addAgent, updateAgent} from '../features/agent/AgentSlice'
+import {addHouse, updateHouse} from '../features/house/HouseSlice'
 import {v4 as uuid} from 'uuid'
 import {useNavigate, useParams} from 'react-router-dom'
 
 
-function AgentForm (){
+function HouseForm (){
     
-    const [agent, setAgent] = useState({
+    const [house, setHouse] = useState({
         title: '',
         description: ''
     })
@@ -15,12 +15,12 @@ function AgentForm (){
     const dispatch = useDispatch()
     const navigate = useNavigate()
     const params = useParams()
-    const agents = useSelector(state => state.agents)
+    const houses = useSelector(state => state.houses)
 
 
     const handleChange = e => {
-        setAgent({
-            ...agent,
+        setHouse({
+            ...house,
             [e.target.name]: e.target.value,
         })
     }
@@ -29,10 +29,10 @@ function AgentForm (){
         e.preventDefault();
 
         if(params.id){
-            dispatch(updateAgent(agent))
+            dispatch(updateHouse(house))
         }else{
-            dispatch(addAgent({
-            ...agent,
+            dispatch(addHouse({
+            ...house,
             id: uuid(),
         }))
         }
@@ -41,19 +41,19 @@ function AgentForm (){
 
     useEffect(() => {
         if (params.id){
-            setAgent(agents.find((agent) => agent.id === params.id))
+            setHouse(houses.find((house) => house.id === params.id))
         }
     },[])
 
     return (
         <form onSubmit={handleSubmit}>
-            <input name='title' type="text" placeholder='title' onChange={handleChange} value={agent.title} />
+            <input name='title' type="text" placeholder='title' onChange={handleChange} value={house.title} />
 
-            <textarea name="description" placeholder='description' onChange={handleChange} value={agent.description}></textarea>
+            <textarea name="description" placeholder='description' onChange={handleChange} value={house.description}></textarea>
 
             <button>save</button>
         </form>
     )
 }
 
-export default AgentForm
+export default HouseForm

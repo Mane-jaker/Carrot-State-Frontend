@@ -7,6 +7,7 @@ import Button from '../continuous/Button'
 import ButtonAdd from '../continuous/ButtonAdd'
 import '../styles/style.css'
 import '../styles/stylespage/AgentPage.css'
+import SelectPages from '../continuous/SelectPages'
 
 function AgentPage(){
 
@@ -32,7 +33,7 @@ function AgentPage(){
                 </section>
                 <section className="container">
                     <div className="row justify-content-center">
-                        <div className="col-4">
+                        <div className="col-4 mt">
                             <h2 className='hsblack'>Lista de propiedades</h2>
                         </div>
                     </div>
@@ -42,7 +43,7 @@ function AgentPage(){
                     <section className="container">
                         <div className="row justify-content-center">
                             <div className="col-4">
-                                <h2 className='hsblack'>Aqui va ir un select</h2>
+                                <SelectPages id={"Select"} />
                             </div>
                         </div>
                     </section>

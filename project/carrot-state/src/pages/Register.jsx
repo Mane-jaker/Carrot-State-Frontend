@@ -72,7 +72,7 @@ function Register(){
 
     useEffect(() =>{}, [selected])
     
-    const typ = "password"
+    const typ = "text"
     const clas ="form-control inp"
     const idu = "user"
     return(

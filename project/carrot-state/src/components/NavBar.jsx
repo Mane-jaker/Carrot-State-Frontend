@@ -29,7 +29,27 @@ function NavBar({isAgent}) {
                        <img src={logo} alt="ola" className='img-fluid' />
                     </div>
                     <div className="col-3">
-                    <Link to={"/"} className='hs'><h1>Carroth State</h1></Link>
+                    {isAgent == 1 && (
+                        <>
+                            <Link to={"/"} className='hs'><h1>Carroth State</h1></Link>
+                        </>
+                    )}
+                    {isAgent == 2 && (
+                        <>
+                            <Link to={"/InmobiliPage"} className='hs'><h1>Carroth State</h1></Link>
+                        </>
+                    )}
+                    {isAgent == 3 && (
+                        <>
+                            <Link to={"/agentPage/1"} className='hs'><h1>Carroth State</h1></Link>
+                        </>
+                    )}
+                    {isAgent == 4 && (
+                        <>
+                            <Link to={"/clients"} className='hs'><h1>Carroth State</h1></Link>
+                        </>
+                    )}
+
                     </div>  
                     <div className="col-4 offset-4">
                         <div className="row align-items-center">
@@ -61,10 +81,10 @@ function NavBar({isAgent}) {
                             {isAgent == 3 && (
                                 <>
                                     <div className="col-4">
-                                        <Link to={"/agentpage/client"} className='navp'>Clientes</Link>
+                                        <Link to={"/agentPage/1"} className='navp'>Propiedades</Link>
                                     </div>
                                     <div className="col-4">
-                                        <Link to={"/agentPage/1"} className='navp'>Propiedades</Link>
+                                        <Link to={"/agentpage/client"} className='navp'>Clientes</Link>
                                     </div>
                                     <div className="col-2">
                                         <div>

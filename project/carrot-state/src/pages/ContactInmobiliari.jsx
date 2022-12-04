@@ -1,6 +1,7 @@
 import Footer from '../components/Footer'
 import NavBar from '../components/NavBar'
 import RowBienvenida from '../components/RowBienvenida'
+import BodoqueCard from '../components/BodoqueCard'
 import '../styles/style.css'
 import '../styles/stylespage/ClientsPage.css'
 
@@ -25,11 +26,11 @@ function ContactInmobiliari(){
                     </div>
                 </section>
             </div>
-            <div className="container-fluid mt">
-                <div className="container">
-                    <h2>Aqui va ir booque</h2>
-                </div>
-            </div>
+            <section className="row mt">
+                <section className="container">
+                    <BodoqueCard/>
+                </section>
+            </section>
             <section className="row fondo-footer mt">
                 <Footer />
             </section>

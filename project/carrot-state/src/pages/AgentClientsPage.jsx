@@ -4,6 +4,9 @@ import NavBar from '../components/NavBar'
 import RowBienvenida from '../components/RowBienvenida'
 import Pagination from '../components/Pagination'
 import Footer from '../components/Footer'
+import SelectPages from '../continuous/SelectPages'
+import InterBodoquesCard from '../components/InterBodoquesCard'
+import '../styles/stylespage/AgentPage.css'
 
 function AgentClientsPage(){
     return(
@@ -28,13 +31,13 @@ function AgentClientsPage(){
                 <div className="container">
                     <div className="row justify-content-center">
                         <div className="col-4 mt">
-                            <h2 className='hsblack'>Aqui va ir un select</h2>
+                            <SelectPages id={"Select"} />
                         </div>
                     </div>
                 </div>
             </section>
             <section className="container mt">
-                <h2>Card de agente-cliente</h2>
+                <InterBodoquesCard/>
             </section>
             <section className="row fondo-footer">
                 <Footer/>
