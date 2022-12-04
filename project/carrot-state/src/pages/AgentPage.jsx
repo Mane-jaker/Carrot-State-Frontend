@@ -28,7 +28,7 @@ function AgentPage(){
                         <NavBar isAgent={3}/>
                     </div>
                     <div className="row align-items-center justify-content-center bie">
-                        <RowBienvenida texto={"Bienvenido otra vez"}/>
+                        <RowBienvenida codigo={"654654564"} IsAgent={true} agentName={"Esteban Gonzo"} texto={"Bienvenido otra vez"}/>
                     </div>
                 </section>
                 <section className="container">
