@@ -74,13 +74,15 @@ function AgentPage(){
                 }
                 
                 <section className="container-fluid mt">
+                    
                     <div className="container">
+                        <ButtonAdd id={idAgent}/>
                         <Pagination forAgent={true}/>
                     </div>
-                    <ButtonAdd id={idAgent}/>
                 </section>
                 <section className="row fondo-footer mt">
                     <Footer />
+                    
                 </section>
             </div>
             

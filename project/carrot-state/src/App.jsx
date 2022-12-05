@@ -46,7 +46,7 @@ function App() {
               <Route path=':idAgent' element={<ItemRegister/>}></Route> 
             </Route>
             <Route path='/InmobiliPage' element={<InmobiliariaPage/>}>
-            <Route path=':idAgent' element={<ItemRegister/>}></Route> 
+              <Route path=':idAgent' element={<ItemRegister/>}></Route> 
             </Route>
             <Route path='/carloxd' element={<Prueba/>}/>
             <Route path='/carloxd/edit-agent/:id' element={<AgentForm/>}/>
