@@ -1,5 +1,4 @@
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
-import {useSelector} from 'react-redux'
 import AgentPage from './pages/AgentPage'
 import ClientsPage from './pages/ClientsPage'
 import ErrorPage from './pages/ErrorPage'
