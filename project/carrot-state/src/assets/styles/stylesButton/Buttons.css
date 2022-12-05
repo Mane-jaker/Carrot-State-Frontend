@@ -1,0 +1,30 @@
+.buttonBack{
+    height: 100%;
+    width: 80%;
+    padding: 0;
+    margin-left: 10%;
+}
+
+.RetrocesoImg{
+    height: 5vh;
+}
+
+.ButtonBlue{
+    background-color: rgba(43, 76, 126, 1);
+}
+
+.ButtonBlack{
+    background-color: rgba(31, 31, 32, 1);
+}
+
+.Inputs{
+    background-color:rgba(86, 126, 187, 1) ;
+}
+
+.buttonNext{
+    background-color:rgba(86, 126, 187, 1) ;
+    height:100%;
+    width: 5%;
+    padding: 0;
+    margin-left: 10%;
+}

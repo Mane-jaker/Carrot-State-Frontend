@@ -1,0 +1,123 @@
+.Register{
+    height: 100vh;
+    display: flex;
+    background-image: url(../assets/imgporfile/loginimg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+}
+
+.CardRegister{
+    display: flex;
+    border-radius: 15px;
+    height: 80%;
+    width: 52vh;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: rgba(220, 224, 230, 1);
+}
+
+.RegisterTitle{
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+}
+
+.FormColumnRegister{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    width: 100%;
+}
+
+.InputsRegister{
+    width: 100%;
+}
+
+.InputNameRegister{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 6px;
+    padding-left: 15px;
+}
+
+.InputCorreoRegister{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 6px;
+    padding-left: 15px;
+}
+
+
+.InputPasswordRegister{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 6px;
+    padding-left: 15px;
+}
+
+.InputCodeRegister{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 6px;
+    padding-left: 15px;
+}
+
+.InputUser{
+    width: 45vh;
+    height: 5vh;
+    border-radius: 10px;
+    background-color: rgba(86, 126, 187, 1);
+}
+
+.InputCorreo{
+    width: 45vh;
+    height: 5vh;
+    border-radius: 10px;
+    background-color: rgba(86, 126, 187, 1);
+}
+
+.InputContra{
+    width: 45vh;
+    height: 5vh;
+    border-radius: 10px;
+    background-color: rgba(86, 126, 187, 1);
+}
+
+
+
+.InputUser::placeholder{
+    color: white;
+}
+
+.InputCorreo::placeholder{
+    color: white;
+}
+
+.InputContra::placeholder{
+    color: white;
+}
+
+.ButtonAtomRegister{
+    display: flex;
+    justify-content: center;
+    padding-top: 15%;
+}
+
+.Tamaño{
+    background-color: rgba(43, 76, 126, 1);
+    border-radius: 15px;
+    width: 200px;
+}
+
+.RegisterPie{
+    padding-top: 30%;
+    display: flex;
+    justify-content: center;
+}

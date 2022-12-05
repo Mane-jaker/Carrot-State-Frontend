@@ -1,0 +1,36 @@
+import ButtonAtom from "../atoms/ButtonAtom"
+import TextAtom from "../atoms/TextAtom"
+import {NavLink} from "react-router-dom"
+
+    const clas = "btn btn-primary tamaño"
+    const type = "button"
+    const txt0 = "Ingresar"
+    const clas1 = "btn btn-primary tamaño"
+    const type1 = "button"
+    const txt1 = "Registrar"
+    const clasTitle = "RSC"
+    const txt2 = "Real State Comanayer"
+
+function StartRow(){
+    return(
+        <>
+            <div className="row Button">
+                <div className="column-6 Content">
+                    <div className="column-6 Title">
+                        <TextAtom clas={clasTitle} text={txt2} />
+                    </div>
+                    <div className="Buttons">
+                        <div className="ButtonIngresar">
+                           <NavLink to="/login"><ButtonAtom clas={clas} text={txt0} type={type} /></NavLink> 
+                        </div>
+                        <div className="ButtonRegistrarse">
+                            <NavLink to="/register"><ButtonAtom clas={clas1} text={txt1} type={type1} /></NavLink>
+                        </div>
+                    </div>   
+                </div>
+            </div>
+        </>
+    )
+}
+
+export default StartRow

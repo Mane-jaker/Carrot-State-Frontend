@@ -1,0 +1,80 @@
+#me{
+    background-color: grey;
+    border-radius: 50%;
+    border: 1px solid azure;
+    display: block;
+    width: 250px;
+    height: 250px;
+}
+.btn{
+    background-color: inherit;
+    color: azure;
+    height: 60px;
+    width: 300px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: xx-large;
+    letter-spacing: 10px;
+    text-align: center;
+}
+.two{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+    letter-spacing: normal;
+}
+.close{
+    border: 1px solid azure;
+    width: 60px;
+    border-radius: 50%;
+}
+.prosp{
+    border: 1px solid azure;
+    width: auto;
+    border-radius: 20%; 
+    cursor: pointer;
+}
+#addbtn{
+    background-color: azure;
+    color: black;
+    border: 1px solid black;
+}
+/* top bar first option classes
+.changeable{
+    color: rgba(240, 255, 255, 0);
+}
+#changeabl.changer{
+    color: black;
+}
+#changeable.changer {
+    color: black;
+}
+#changeables.changer {
+    color: black;
+}*/
+.changeable{
+    background-color: rgb(0, 0, 0);
+    border: 1px solid azure;
+}
+.input{
+    background-color: black;
+    color: azure;
+    height: 60px;
+    width: 70%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: xx-large;
+    text-align: center;
+}
+.sInput{
+    border: 1px solid azure;
+}
+#goBtn{
+    background-color: azure;
+    color: black;
+    border: 1px solid black;
+}

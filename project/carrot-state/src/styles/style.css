@@ -1,0 +1,186 @@
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    color: black;
+}
+
+p{
+    color: rgb(31, 31, 32);
+}
+
+.buttonAdd{
+    height: 60px;
+    width: 60px;
+    padding: 0;
+    margin-left: 10%;
+    background-color: rgba(227, 164, 164, 1); 
+    position: fixed;
+    bottom: 10vh;
+    right: 5vh;
+}
+
+/* Fondos */
+.fondo-img-pano{
+    background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.6)
+    ,rgba(0, 0, 0, 0.6)),
+    url(/src/assets/Img/panoramica.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: contain;
+    justify-content: center;
+    height: 50vh;
+    width: 100%;
+}
+
+.fondo-img{
+    background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.6)
+    ,rgba(0, 0, 0, 0.6)),
+    url(/src/assets/Img/ksitaPano.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: contain;
+    justify-content: center;
+    height: 50vh;
+    width: 100%;
+}
+
+
+.nav-bar{
+    background-color: transparent;
+    height: 14vh;
+}
+
+.nav-bar.color{
+    background-color: rgba(143, 198, 255, 1);
+    height: 14vh;
+}
+
+.fondo-deg{
+    background-image: 
+    url(/src/assets/Img/background.svg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    justify-content: center;
+}
+
+.fondo-footer{
+    background-color: rgb(255, 255, 255);
+    height: 20vh;
+}
+
+/* Textos */
+.hs{
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 1000;
+    font-size: 180%;
+    line-height: 100%;
+    text-align: center;
+}
+
+.hsblack{
+    color: black;
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 1000;
+    font-size: 180%;
+    line-height: 100%;
+    text-align: center;
+}
+
+.navp{
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 130%;
+    line-height: 100%;
+    text-align: center;
+}
+
+.foop{
+    color: black;
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 130%;
+    line-height: 100%;
+    text-align: center;
+}
+
+/* Utilidades */
+.bor{
+    border: solid 2px black;
+}
+
+.mt{
+    margin-top: 5%;
+}
+
+.mb{
+    margin-bottom: 5%;
+}
+
+.btn:hover{
+    background-color: rgba(143, 198, 255, 1);
+}
+
+.h100{
+    height: 100vh;
+}
+
+.h100p{
+    height: 100%;
+}
+
+.w100{
+    width: 100%;
+}
+.buttonAbsolute{
+    height: 20%;
+}
+
+/*error*/
+.errorpg{
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    align-items: center;
+}
+.notnotcarrot{
+    width: 60%;
+    height: auto;
+}
+
+/*another pop (nav-pop)
+.dispPop{
+    width: 40%;
+    border-radius: 1rem;
+    background-color: rgb(150 174 220);
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    display: none;
+}
+.notdispop{
+    display: -moz-popup; no se como usar esa wea
+    display: inline;
+}
+.quesos{
+    color: white;
+}
+.quesosbtns{
+    justify-content: space-around;
+}
+.containerpop{
+    width: 100%;
+}*/

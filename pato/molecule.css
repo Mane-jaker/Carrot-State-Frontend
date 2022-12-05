@@ -1,0 +1,70 @@
+.profileImg{
+    height: 300px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btns{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.property{
+    display: flex;
+    flex-direction: column;
+    /*align-items: center; => in atom: width: 250px;*/
+    max-height: 300px;
+    max-width: 300px;
+}
+.propertytwo{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.control{
+    display: flex;
+    width: 250px;
+    justify-content: space-between;
+}
+.topbar{
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+.move{
+    flex-direction: row;
+}
+.noContent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+.houseContent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    border: 4px solid azure;
+}
+.plotContent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    border: 4px solid aqua;
+}
+.premiseContent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    border: 4px solid brown;
+}

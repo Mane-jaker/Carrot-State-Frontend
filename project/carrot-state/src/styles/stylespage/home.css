@@ -1,0 +1,20 @@
+
+/*.card-img-top{
+    border-radius: 1rem 1rem 0rem 0rem;
+}
+*
+.card-title{
+    color: rgba(12, 131, 255, 1);
+}
+.card-text{
+    color: rgba(12, 131, 255, 1);
+}*/
+
+.bie{
+    height: 100%;
+}
+
+.btcard{
+    background-color: rgba(12, 131, 255, 1);
+    color: white;
+}
