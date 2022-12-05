@@ -1,33 +1,46 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-const initialState = {
-    id: 0,
+const initialState = [{
+    id: 1,
     name: "",
     location: "",
     cityState: "",
     description: "",
-    size: 0,
-    price: 0
-};
+    size: "",
+    price: ""
+}];
 
 export const plotSlice = createSlice({
     name: 'plots',
-    initialState: {},
+    initialState,
     reducers: {
         addPlot: (state, action) => {
             state.push(action.payload)
         },
-        updatePLot: (state, action) => {
-            state.put(action.payload)
+        updatePlot: (state, action) => {
+            const {id, name, location, cityState, description, size, price}= action.payload
+            const foundPlot = state.find(plot => plot.id === id)
+
+            if(foundPlot){
+                foundPlot.name= name
+                foundPlot.location = location
+                foundPlot.cityState = cityState
+                foundPlot.description = description
+                foundPlot.size = size
+                foundPlot.price = price
+            }
         },
         deletePlot: (state, action) => {
-            state.delete(action.payload)
+           const taskFound = state.find(plot => plot.id === action.payload)
+           if(taskFound){
+                state.splice(state.indexOf(taskFound),1)
+           }
         }
      }
 });
 
 export const {addPlot} = plotSlice.actions;
-export const {updatePLot} = plotSlice.actions;
+export const {updatePlot} = plotSlice.actions;
 export const {deletePlot} = plotSlice.actions;
 
 export default plotSlice.reducer;

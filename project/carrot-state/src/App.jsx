@@ -18,6 +18,7 @@ import ContactVender from './pages/ContactVender'
 import PropiedadesPage from './pages/PropiedadesPage'
 import AgentClientsPage from './pages/AgentClientsPage'
 import AgentForm from './componentsRedux/AgentForm'
+import PlotsForm from './componentsRedux/PlotsForm'
 
 
 function App() {
@@ -49,6 +50,7 @@ function App() {
             </Route>
             <Route path='/carloxd' element={<Prueba/>}/>
             <Route path='/carloxd/edit-agent/:id' element={<AgentForm/>}/>
+            <Route path='/carloxd/edit-plot/:id' element={<PlotsForm/>}/>
             <Route path='/clients/inmobiliaria' element={<ContactInmobiliari/>}/>
             <Route path='/clients/propiedades' element={<ContactPropiedades/>}/>
             <Route path='/clients/vender' element={<ContactVender/>}/>
