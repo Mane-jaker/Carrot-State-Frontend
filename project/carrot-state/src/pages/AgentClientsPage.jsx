@@ -7,14 +7,23 @@ import Footer from '../components/Footer'
 import SelectPages from '../continuous/SelectPages'
 import InterBodoquesCard from '../components/InterBodoquesCard'
 import '../styles/stylespage/AgentPage.css'
+import {useSelector} from 'react-redux'
 
 function AgentClientsPage(){
+    const users = useSelector (state => state.users)
     return(
         <>
         <div className="row fondo-deg">
             <section className="row fondo-img">
                 <div className="row header nav-bar fixed-top">
                     <NavBar isAgent={3}/>
+                    {users.map(user =>(
+                            //aqui traigo el id que esta en el store  
+                        <div key={user.id}>
+                            <h3>{user.id}</h3>
+                            <h3>{user.token}</h3>
+                        </div>
+                        ))}
                 </div>
                 <div className="row align-items-center justify-content-center bie">
                     <RowBienvenida texto={"Mira los clientes de tu propiedades"}/>

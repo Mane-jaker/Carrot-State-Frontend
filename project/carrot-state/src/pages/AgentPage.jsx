@@ -8,6 +8,7 @@ import ButtonAdd from '../continuous/ButtonAdd'
 import '../styles/style.css'
 import '../styles/stylespage/AgentPage.css'
 import SelectPages from '../continuous/SelectPages'
+import {useSelector} from 'react-redux'
 
 function AgentPage(){
 
@@ -19,6 +20,7 @@ function AgentPage(){
 
     const typ = "button"
     const clas ="btn btpro"
+    const users = useSelector (state => state.users)
 
     return(
         <>
@@ -26,6 +28,16 @@ function AgentPage(){
                 <section className="container-fluid fondo-img-pano">
                     <div className="row header nav-bar fixed-top">
                         <NavBar isAgent={3}/>
+
+                          
+                        {users.map(user =>(
+                            //aqui traigo el id que esta en el store  
+                        <div key={user.id}>
+                            <h3>{user.id}</h3>
+                            <h3>{user.token}</h3>
+                        </div>
+                        ))}
+
                     </div>
                     <div className="row align-items-center justify-content-center bie">
                         <RowBienvenida texto={"Bienvenido otra vez"}/>

@@ -1,12 +1,12 @@
 import React from 'react'
-import AgentForm from './AgentForm'
-import AgentList from './AgentList'
+import UserForm from './UserForm'
+import UserList from './UserList'
 
 function Prueba() {
   return (
     <div>
-        <AgentForm/>
-        <AgentList/>
+        <UserForm/>
+        <UserList/>
     </div>
   )
 }

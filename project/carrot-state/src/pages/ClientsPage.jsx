@@ -9,7 +9,7 @@ import SelectPages from '../continuous/SelectPages'
 function ClientsPage(){
     return(
         <>
-            <div className="row fondo-deg">
+           <div className="row fondo-deg">
                 <section className="container-fluid fondo-img-pano">
                     <div className="row header nav-bar fixed-top">
                         <NavBar isAgent={4}/>

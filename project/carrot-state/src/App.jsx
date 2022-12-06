@@ -16,7 +16,7 @@ import ContactPropiedades from './pages/Contactpropiedades'
 import ContactVender from './pages/ContactVender'
 import PropiedadesPage from './pages/PropiedadesPage'
 import AgentClientsPage from './pages/AgentClientsPage'
-import AgentForm from './componentsRedux/AgentForm'
+import UserForm from './componentsRedux/UserForm'
 
 
 function App() {
@@ -47,14 +47,14 @@ function App() {
             <Route path=':idAgent' element={<ItemRegister/>}></Route> 
             </Route>
             <Route path='/carloxd' element={<Prueba/>}/>
-            <Route path='/carloxd/edit-agent/:id' element={<AgentForm/>}/>
+            <Route path='/carloxd/edit-user/:id' element={<UserForm/>}/>
             <Route path='/clients/inmobiliaria' element={<ContactInmobiliari/>}/>
             <Route path='/clients/propiedades' element={<ContactPropiedades/>}/>
             <Route path='/clients/vender' element={<ContactVender/>}/>
             <Route path='/InmobiliPage/propiedades' element={<PropiedadesPage/>}/>
             <Route path='/agentpage/client' element={<AgentClientsPage/>}/>
           </Routes>
-        </BrowserRouter>
+/project/carrot-state/src/pages        </BrowserRouter>
       </>
   )
 }

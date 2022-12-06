@@ -1,15 +1,30 @@
 import { useEffect, useState } from "react"
 import { useRef } from "react"
 import { Navigate, useNavigate, useParams } from "react-router-dom"
+import {v4 as uuid} from 'uuid'
+import { useDispatch } from "react-redux"
+import { updateUser,addUser } from "../features/user/userSlice"
 import Inputs from "../continuous/Inputs"
 import '../styles/style.css'
 import '../styles/stylespage/Login.css'
+import { useSelector } from "react-redux"
 
 function Login(){
 
+
+
+    const [user, setUser] = useState({
+        id: 9,
+        token: 2
+    })
+    
+
+    const User = useSelector (state => state.users)
     const typ = "text"
     const clas ="form-control inp"
     const idu = "user"
+    const dispatch = useDispatch();
+    const params = useParams()
 
     const { loginType } = useParams();
     const navigate = useNavigate();
@@ -17,17 +32,24 @@ function Login(){
 
     const email = useRef();
     const password = useRef();
-    
+
     const handleOnClick = () => {
-        setCredentials({email: email.current.value, password: password.current.value})
+        dispatch(addUser({
+            ...user 
+        })) 
+        navigate("/agentPage/" + user.id)        
+        //setCredentials({email: email.current.value, password: password.current.value})
     }
 
     const handleAgentLogin = (response) =>{
+        
         if(response.data.success){
             navigate("/agentPage/" + response.data.logged.id);
+
         }
         alert(response.message)
     }
+
 
     useEffect(() =>{
 
@@ -42,7 +64,10 @@ function Login(){
                         },
                         redirect: 'follow',
                         body: JSON.stringify(credentials)
-                    }).then((response) => {return response.json()})
+                    }).then((response) => {
+                        response.headers.get("Authorization")
+                        return response.json()})
+                        
                     .then((response) => { 
                         handleAgentLogin(response);
                     })
@@ -77,6 +102,7 @@ function Login(){
                             <div className="row mt">
                                 <h1 className="hs">Log-in</h1>
                             </div>
+
                             <div className="row justify-content-center">
                                 <Inputs Texto={"Email"} Type={typ} clas={clas} id={idu} xref={email}/>
                             </div>

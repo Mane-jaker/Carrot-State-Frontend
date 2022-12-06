@@ -1,10 +1,8 @@
 import {configureStore} from "@reduxjs/toolkit"
-import agentReducer from "../features/agent/AgentSlice"
-import houseReducer from "../features/house/HouseSlice"
+import userReducer from "../features/user/userSlice"
 
 export const store = configureStore ({
     reducer: {
-        agents: agentReducer,
-        houses: houseReducer
+        users: userReducer,
     }
 })

@@ -1,26 +1,26 @@
 import { useState, useEffect } from 'react'
 import {useDispatch, useSelector} from 'react-redux'
-import {addAgent, updateAgent} from '../features/agent/AgentSlice'
+import {addUser, updateUser} from '../features/user/userSlice'
 import {v4 as uuid} from 'uuid'
 import {useNavigate, useParams} from 'react-router-dom'
 
 
-function AgentForm (){
+function UserForm (){
     
-    const [agent, setAgent] = useState({
-        title: '',
-        description: ''
+    const [user, setUser] = useState({
+        id: "",
+        token: ""
     })
 
     const dispatch = useDispatch()
     const navigate = useNavigate()
     const params = useParams()
-    const agents = useSelector(state => state.agents)
+    const users = useSelector(state => state.users)
 
 
     const handleChange = e => {
-        setAgent({
-            ...agent,
+        setUser({
+            ...user,
             [e.target.name]: e.target.value,
         })
     }
@@ -29,11 +29,10 @@ function AgentForm (){
         e.preventDefault();
 
         if(params.id){
-            dispatch(updateAgent(agent))
+            dispatch(updateUser(user))
         }else{
-            dispatch(addAgent({
-            ...agent,
-            id: uuid(),
+            dispatch(addUser({
+            ...user,  
         }))
         }
         navigate('/carloxd')
@@ -41,19 +40,19 @@ function AgentForm (){
 
     useEffect(() => {
         if (params.id){
-            setAgent(agents.find((agent) => agent.id === params.id))
+            setUser(users.find(user => user.id === params.id))
         }
     },[])
 
     return (
         <form onSubmit={handleSubmit}>
-            <input name='title' type="text" placeholder='title' onChange={handleChange} value={agent.title} />
+             <input name='id' type="text" placeholder='id' onChange={handleChange} value={user.id} />
 
-            <textarea name="description" placeholder='description' onChange={handleChange} value={agent.description}></textarea>
+            <input name='token' type="text" placeholder='token' onChange={handleChange} value={user.token} />
 
             <button>save</button>
         </form>
     )
 }
 
-export default AgentForm
+export default UserForm
