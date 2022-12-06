@@ -1,0 +1,59 @@
+.elpop{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+    background-color: rgba(150, 174, 220, 1);
+    border-radius: 1rem;
+    padding: 4rem;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+/**/
+.dirow{
+    display: flex;
+    flex-direction: row;
+}
+.dircol{
+    display: flex;
+    flex-direction: column;
+}
+.justcen{
+    display: flex;
+    justify-content: center;
+}
+.aligcen{
+    display: flex;
+    align-items: center;
+}
+.aligcontcen{
+    display: flex;
+    align-content: center;
+}
+/**/
+.cardsitas{
+    background-color: white; 
+    border-radius: 0.25rem;   
+    padding: 0.5rem;
+}
+p{
+    text-align: center;
+    color: rgba(12, 131, 255, 1);
+}
+.imgsize{
+    width: 35%;
+}
+.byheight{
+    height: 100%;
+    width: 100%;
+}
+.border{
+    border-radius: 0.25rem;
+}
+.tam{
+    width: 15rem;
+    height: 3rem;
+}

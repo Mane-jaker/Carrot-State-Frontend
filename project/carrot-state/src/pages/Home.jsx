@@ -5,6 +5,7 @@ import RowBienvenida from '../components/RowBienvenida';
 import '../styles/style.css' 
 import '../styles/stylespage/home.css'
 import { Link } from 'react-router-dom';
+import Card from '../components/Card';
 
 function Home(){
     
@@ -22,6 +23,7 @@ function Home(){
                 <section className="container-fluid">{/*creo que este deberia ser articcle */}
                     <div className="container mt">{/*y este un section */}
                         <Pagination />
+                        <Card/>
                     </div>  
                 </section>
                 <section className="container-fluid fondo-footer mt">

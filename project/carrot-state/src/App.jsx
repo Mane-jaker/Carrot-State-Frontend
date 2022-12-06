@@ -17,7 +17,7 @@ import ContactVender from './pages/ContactVender'
 import PropiedadesPage from './pages/PropiedadesPage'
 import AgentClientsPage from './pages/AgentClientsPage'
 import AgentForm from './componentsRedux/AgentForm'
-
+import PopupInmovil from './components/PopupInmovil'
 
 function App() {
   //localhost:5173/login/agent
@@ -53,6 +53,7 @@ function App() {
             <Route path='/clients/vender' element={<ContactVender/>}/>
             <Route path='/InmobiliPage/propiedades' element={<PropiedadesPage/>}/>
             <Route path='/agentpage/client' element={<AgentClientsPage/>}/>
+            <Route path='/popop' element={<PopupInmovil/>}/>
           </Routes>
         </BrowserRouter>
       </>

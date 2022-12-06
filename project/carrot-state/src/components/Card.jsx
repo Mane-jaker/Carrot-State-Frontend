@@ -1,9 +1,12 @@
 import Button from "../continuous/Button"
 import '../styles/style.css'
+import PopupInmovil from "./PopupInmovil"
 
 function Card({imj,title,desc,price}) {
     const typ = "button"
     const clas = "btn btcard"
+    const s = (()=>{
+    })
 
     return (
         <section className="card text-center mt">
@@ -21,7 +24,7 @@ function Card({imj,title,desc,price}) {
                     <p class="card-text">{price}</p>
                 </div>
                 <div className="mt">
-                    <Button Texto="See more" typ={typ} clas={clas}/>
+                    <Button onClick={s} Texto="See more" typ={typ} clas={clas}/>
                 </div>
             </section>
         </section>
