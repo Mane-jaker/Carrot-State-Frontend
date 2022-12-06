@@ -15,19 +15,19 @@ function CardAgent(){
                     <section className="col-8 info-agent">
                         <div className="row info-agent-data">
                             <div className="col-2 the-info">Nombre:</div>
-                            <div className="col-10 space">space</div>
+                            <div className="col-10 space"><h6>space</h6></div>
                         </div>
                         <div className="row info-agent-data">
                             <div className="col-2 the-info">Email:</div>
-                            <div className="col-10 space">space</div>
+                            <div className="col-10 space"><h6>space</h6></div>
                         </div>
                         <section className="row info-agent-multidata">
                                 <div className="col-2 the-info">Estado:</div>
-                                <div className="col-1 space">mini</div>
+                                <div className="col-1 space"><h6>mini</h6></div>
                                 <div className="col-2 offset-1 the-info">Ventas:</div>
-                                <div className="col-1 space">mini</div>
+                                <div className="col-1 space"><h6>mini</h6></div>
                                 <div className="col-3 offset-1 the-info">Propiedades:</div>
-                                <div className="col-1 space">mini</div>
+                                <div className="col-1 space"><h6>mini</h6></div>
                         </section>
                     </section>
                 </div>

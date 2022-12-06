@@ -17,6 +17,7 @@ function Home(){
                         <NavBar isAgent={1}/>
                     </div>
                     <div className="row align-items-center justify-content-center bie">
+                        
                         <RowBienvenida texto={"Vende, Compra o Renta con confianza y con seguridad"}/>
                     </div>
                 </section>    

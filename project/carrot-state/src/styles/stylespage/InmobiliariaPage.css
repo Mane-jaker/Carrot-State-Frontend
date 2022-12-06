@@ -1,6 +1,6 @@
 .agent-card{
     margin: 2rem;
-    border-radius: 0.25rem;
+    border-radius: 0.8rem;
     background-color: rgb(255, 255, 255);
     height: 12rem;
 }
@@ -23,6 +23,11 @@
     border-radius: 0.25rem;
     background-color: rgba(217, 217, 217, 1);
     align-items: center;
+    height: 2.5rem;
+}
+
+.space h6{
+    padding-top: 9px;
 }
 .info-agent-multidata{
     display: flex;

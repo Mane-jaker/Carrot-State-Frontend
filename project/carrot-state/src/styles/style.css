@@ -14,7 +14,6 @@ p{
 .buttonAdd{
     height: 60px;
     width: 60px;
-    padding: 0;
     margin-left: 10%;
     background-color: rgba(227, 164, 164, 1); 
     position: fixed;
@@ -128,9 +127,6 @@ p{
     margin-bottom: 5%;
 }
 
-.btn:hover{
-    background-color: rgba(143, 198, 255, 1);
-}
 
 .h100{
     height: 100vh;
@@ -143,8 +139,10 @@ p{
 .w100{
     width: 100%;
 }
-.buttonAbsolute{
-    height: 20%;
+.Absolute{
+    position: fixed;
+    bottom: 25%;
+    right: 2%; 
 }
 
 /*error*/
