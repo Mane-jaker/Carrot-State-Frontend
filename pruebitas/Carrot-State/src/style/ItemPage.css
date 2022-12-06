@@ -1,0 +1,176 @@
+.SizeRow{
+   height: 100vh;
+}
+
+.BackPage{
+    height: 10vh;
+}
+
+.TextCenter{
+    background-color: rgba(96, 109, 128, 1);
+    border-radius: 15px;
+    height: 9vh;
+}
+
+.mt4{
+    margin-top: 0.5%;
+}
+
+.TitleBack{
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    align-items:flex-end stretch;
+    justify-content: center;
+}
+
+.BtnBack{
+    font-weight: bold;
+    font-size: 20px;
+    background-color: rgba(135, 176, 145, 1);
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.FormRH{
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(199, 200, 177);
+    border-radius: 15px;
+    margin-left: 1%;
+}
+
+.SelecRH{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.InputForms{
+    background-color: azure;
+    border-radius: 15px;
+    height: 70vh;
+}
+
+.Inputs{
+
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Inputs1{
+    justify-content: center;
+   
+}
+
+.Inputs2{
+
+    justify-content: center;
+}
+
+.Intp1{
+    background-color: rgba(43, 76, 126, 1);
+    border-radius: 15px;
+    padding-left: 28px;
+}
+
+.Intp1::placeholder{
+    color: white;
+}
+
+
+.BtnSeccRH{
+    display: flex;
+}
+
+.Btn1{
+    padding-right: 15px;
+}
+.Btn2{
+    padding-left: 15px;
+}
+
+.BtnType{
+    background-color: rgba(43, 76, 126);
+    border-radius: 15px;
+    width: 200px;
+}
+
+.SigPage{
+    display: flex;
+    align-items: center;
+    height: 12vh;
+    padding-left: 2%;
+}
+
+.SigRH{
+    display: flex;
+    border-radius: 15px;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 15px;
+    background-color: rgba(96, 109, 128, 1);
+    height:70px;
+    width: 100%;
+}
+
+.BtnImagenRh{
+    border-radius: 15px;
+    background-color: rgba(43, 76, 126);
+    width: 150px;
+}
+
+.BtnSend{
+    border-radius: 15px;
+    background-color: rgba(43, 76, 126);
+    width: 150px;
+}
+
+.BtnImagen{
+    padding-right: 15px;
+}
+
+.ButtSend{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.addimg{
+    width: 100%;
+    text-align: center;
+    background-color: aquamarine;
+    border: 3px solid black;
+    margin-top: 140%;
+    height: 40%;
+    font-size: 300%;
+    border-radius: 15px;
+}
+
+.upimg{
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+    height: 90%;
+    font-size: 200%;
+    background-color: rgba(96, 109, 128, 1);
+    font-weight: bold;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    text-decoration: none;
+    color: black;
+}
+
