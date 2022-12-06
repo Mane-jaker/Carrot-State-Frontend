@@ -1,6 +1,6 @@
 import React from 'react'
 import {useSelector, useDispatch} from 'react-redux'
-import {deleteAgent} from '../features/agent/AgentSlice'
+
 import { Link } from 'react-router-dom'
 
 

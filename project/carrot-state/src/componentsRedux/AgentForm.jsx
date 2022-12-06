@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react'
 import {useDispatch, useSelector} from 'react-redux'
-import {addAgent, updateAgent} from '../features/agent/AgentSlice'
 import {v4 as uuid} from 'uuid'
 import {useNavigate, useParams} from 'react-router-dom'
 
